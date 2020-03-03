@@ -1,0 +1,94 @@
+Script started on 2019-03-28 10:38:20+05:30
+shylesh@shylesh:~$ sftp cs17d47@14.139.189.217
+The authenticity of host '14.139.189.217 (14.139.189.217)' can't be established.
+ECDSA key fingerprint is SHA256:pkLWQEXAwg4Zdh5CXNYydUTPcU7dwDFxyzJnqJ01m/s.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '14.139.189.217' (ECDSA) to the list of known hosts.
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d47@14.139.189.217's password: 
+Connected to cs17d47@14.139.189.217.
+sftp> ls
+examples.desktop    
+sftp> pwd
+Remote working directory: /home/cs17d47
+sftp> cd ..
+sftp> ls
+ask       cec       cs17d00   cs17d01   cs17d02   cs17d03   cs17d04   cs17d05   
+cs17d06   cs17d07   cs17d08   cs17d09   cs17d10   cs17d11   cs17d12   cs17d13   
+cs17d14   cs17d15   cs17d16   cs17d17   cs17d18   cs17d19   cs17d20   cs17d21   
+cs17d22   cs17d23   cs17d24   cs17d25   cs17d26   cs17d27   cs17d28   cs17d29   
+cs17d30   cs17d31   cs17d32   cs17d33   cs17d34   cs17d35   cs17d36   cs17d37   
+cs17d38   cs17d39   cs17d40   cs17d41   cs17d42   cs17d43   cs17d44   cs17d45   
+cs17d46   cs17d47   cs17d48   cs17d49   cs17d50   cs17d51   cs17d52   cs17d53   
+cs17d54   cs17d55   cs17d56   cs17d57   cs17d58   cs17d59   cs17d60   cs17d61   
+cs17d62   hari      ieeecec   
+sftp> cd cs17d47
+sftp> ls
+examples.desktop    
+sftp> mkdir Shylesh
+sftp> ls
+Shylesh             examples.desktop    
+sftp> cd Shylesh
+sftp> lcd /home/desktop/command.txt
+Couldn't change local directory to "/home/desktop/command.txt": No such file or directory
+sftp> lcd /home/Desktop/Django
+Couldn't change local directory to "/home/Desktop/Django": No such file or directory
+sftp> lcd /home/shylesh/Desktop/Django
+sftp> lcd /home/shylesh/Desktop/Django/blog
+sftp> put /blog
+stat /blog: No such file or directory
+sftp> put /templates
+stat /templates: No such file or directory
+sftp> put /home/shylesh/Desktop/Django
+Uploading /home/shylesh/Desktop/Django/ to /home/cs17d47/Shylesh/Django
+/home/shylesh/Desktop/Django/ is not a regular file
+sftp> put /home/shylesh/Desktop/Django/blog/blog/views.py
+Uploading /home/shylesh/Desktop/Django/blog/blog/views.py to /home/cs17d47/Shylesh/views.py
+/home/shylesh/Desktop/Django/blog/blog/views. 100% 1210     7.6KB/s   00:00    
+sftp> put /home/shylesh/Desktop/Django/blog/manage.py
+Uploading /home/shylesh/Desktop/Django/blog/manage.py to /home/cs17d47/Shylesh/manage.py
+/home/shylesh/Desktop/Django/blog/manage.py   100%  536     3.3KB/s   00:00    
+sftp> put /home/shylesh/Desktop/Django
+Uploading /home/shylesh/Desktop/Django/ to /home/cs17d47/Shylesh/Django
+/home/shylesh/Desktop/Django/ is not a regular file
+sftp> mput /home/shylesh/Desktop/Django/*
+Uploading /home/shylesh/Desktop/Django/blog/ to /home/cs17d47/Shylesh/blog
+/home/shylesh/Desktop/Django/blog/ is not a regular file
+sftp> mput /home/shylesh/Desktop/Django/blog/blog/*
+Uploading /home/shylesh/Desktop/Django/blog/blog/__init__.py to /home/cs17d47/Shylesh/__init__.py
+/home/shylesh/Desktop/Django/blog/blog/__init 100%    0     0.0KB/s   00:00    
+Uploading /home/shylesh/Desktop/Django/blog/blog/__pycache__/ to /home/cs17d47/Shylesh/__pycache__
+/home/shylesh/Desktop/Django/blog/blog/__pycache__/ is not a regular file
+Uploading /home/shylesh/Desktop/Django/blog/blog/settings.py to /home/cs17d47/Shylesh/settings.py
+/home/shylesh/Desktop/Django/blog/blog/settin 100% 3093    16.2KB/s   00:00    
+Uploading /home/shylesh/Desktop/Django/blog/blog/urls.py to /home/cs17d47/Shylesh/urls.py
+/home/shylesh/Desktop/Django/blog/blog/urls.p 100%  900     5.3KB/s   00:00    
+Uploading /home/shylesh/Desktop/Django/blog/blog/views.py to /home/cs17d47/Shylesh/views.py
+/home/shylesh/Desktop/Django/blog/blog/views. 100% 1210     7.4KB/s   00:00    
+Uploading /home/shylesh/Desktop/Django/blog/blog/wsgi.py to /home/cs17d47/Shylesh/wsgi.py
+/home/shylesh/Desktop/Django/blog/blog/wsgi.p 100%  385     2.5KB/s   00:00    
+sftp> ls
+__init__.py  manage.py    settings.py  urls.py      views.py     wsgi.py      
+sftp> pwd
+Remote working directory: /home/cs17d47/Shylesh
+sftp> mget *
+Fetching /home/cs17d47/Shylesh/__init__.py to __init__.py
+Fetching /home/cs17d47/Shylesh/manage.py to manage.py
+/home/cs17d47/Shylesh/manage.py               100%  536     1.6KB/s   00:00    
+Fetching /home/cs17d47/Shylesh/settings.py to settings.py
+/home/cs17d47/Shylesh/settings.py             100% 3093     9.3KB/s   00:00    
+Fetching /home/cs17d47/Shylesh/urls.py to urls.py
+/home/cs17d47/Shylesh/urls.py                 100%  900     2.7KB/s   00:00    
+Fetching /home/cs17d47/Shylesh/views.py to views.py
+/home/cs17d47/Shylesh/views.py                100% 1210     3.7KB/s   00:00    
+Fetching /home/cs17d47/Shylesh/wsgi.py to wsgi.py
+/home/cs17d47/Shylesh/wsgi.py                 100%  385     1.2KB/s   00:00    
+sftp> bye
+shylesh@shylesh:~$ exit
+exit
+
+Script done on 2019-03-28 10:43:12+05:30

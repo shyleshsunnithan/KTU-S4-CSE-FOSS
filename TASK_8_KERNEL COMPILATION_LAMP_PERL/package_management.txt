@@ -1,0 +1,701 @@
+shylesh@shylesh:~$ sudo apt remove chromium
+[sudo] password for shylesh: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'chromium' is not installed, so not removed
+The following packages were automatically installed and are no longer required:
+  linux-headers-4.18.0-10 linux-headers-4.18.0-10-generic
+  linux-image-4.18.0-10-generic linux-modules-4.18.0-10-generic
+  linux-modules-extra-4.18.0-10-generic
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 322 not upgraded.
+shylesh@shylesh:~$ sudo remove chromium
+sudo: remove: command not found
+shylesh@shylesh:~$ sudo apt remove thunderbird
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libmessaging-menu0 linux-headers-4.18.0-10 linux-headers-4.18.0-10-generic
+  linux-image-4.18.0-10-generic linux-modules-4.18.0-10-generic
+  linux-modules-extra-4.18.0-10-generic
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  thunderbird thunderbird-gnome-support thunderbird-locale-en
+  thunderbird-locale-en-us
+0 upgraded, 0 newly installed, 4 to remove and 318 not upgraded.
+After this operation, 165 MB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database ... 234057 files and directories currently installed.)
+Removing thunderbird-locale-en-us (1:60.4.0+build2-0ubuntu0.18.10.1) ...
+Removing thunderbird-locale-en (1:60.4.0+build2-0ubuntu0.18.10.1) ...
+Removing thunderbird-gnome-support (1:60.4.0+build2-0ubuntu0.18.10.1) ...
+Removing thunderbird (1:60.4.0+build2-0ubuntu0.18.10.1) ...
+Processing triggers for mime-support (3.60ubuntu1) ...
+Processing triggers for desktop-file-utils (0.23-3ubuntu2) ...
+Processing triggers for man-db (2.8.4-2) ...
+Processing triggers for gnome-menus (3.13.3-11ubuntu2) ...
+shylesh@shylesh:~$ sudo apt-get install emacs
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libmessaging-menu0 linux-headers-4.18.0-10 linux-headers-4.18.0-10-generic
+  linux-image-4.18.0-10-generic linux-modules-4.18.0-10-generic
+  linux-modules-extra-4.18.0-10-generic
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  emacs-bin-common emacs-common emacs-el emacs-gtk liblockfile-bin
+  liblockfile1 libm17n-0 libotf0 m17n-db
+Suggested packages:
+  emacs-common-non-dfsg ncurses-term m17n-docs
+The following NEW packages will be installed:
+  emacs emacs-bin-common emacs-common emacs-el emacs-gtk liblockfile-bin
+  liblockfile1 libm17n-0 libotf0 m17n-db
+0 upgraded, 10 newly installed, 0 to remove and 318 not upgraded.
+Need to get 33.9 MB of archives.
+After this operation, 112 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu cosmic/main amd64 emacs-common all 1:25.2+1-11 [13.1 MB]
+Get:2 http://in.archive.ubuntu.com/ubuntu cosmic/main amd64 liblockfile-bin amd64 1.14-1.1 [11.9 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu cosmic/main amd64 liblockfile1 amd64 1.14-1.1 [6,804 B]
+Get:4 http://in.archive.ubuntu.com/ubuntu cosmic/main amd64 emacs-bin-common amd64 1:25.2+1-11 [127 kB]
+Get:5 http://in.archive.ubuntu.com/ubuntu cosmic/main amd64 libotf0 amd64 0.9.13-3build1 [44.6 kB]
+Get:6 http://in.archive.ubuntu.com/ubuntu cosmic/main amd64 m17n-db all 1.7.0-2 [1,239 kB]
+Get:7 http://in.archive.ubuntu.com/ubuntu cosmic/main amd64 libm17n-0 amd64 1.7.0-3build1 [243 kB]
+Get:8 http://in.archive.ubuntu.com/ubuntu cosmic/main amd64 emacs-gtk amd64 1:25.2+1-11 [3,474 kB]
+Get:9 http://in.archive.ubuntu.com/ubuntu cosmic/main amd64 emacs all 1:25.2+1-11 [12.1 kB]
+Get:10 http://in.archive.ubuntu.com/ubuntu cosmic/main amd64 emacs-el all 1:25.2+1-11 [15.6 MB]
+Fetched 33.9 MB in 5min 16s (107 kB/s)                                         
+Selecting previously unselected package emacs-common.
+(Reading database ... 233955 files and directories currently installed.)
+Preparing to unpack .../0-emacs-common_1%3a25.2+1-11_all.deb ...
+Unpacking emacs-common (1:25.2+1-11) ...
+Selecting previously unselected package liblockfile-bin.
+Preparing to unpack .../1-liblockfile-bin_1.14-1.1_amd64.deb ...
+Unpacking liblockfile-bin (1.14-1.1) ...
+Selecting previously unselected package liblockfile1:amd64.
+Preparing to unpack .../2-liblockfile1_1.14-1.1_amd64.deb ...
+Unpacking liblockfile1:amd64 (1.14-1.1) ...
+Selecting previously unselected package emacs-bin-common.
+Preparing to unpack .../3-emacs-bin-common_1%3a25.2+1-11_amd64.deb ...
+Unpacking emacs-bin-common (1:25.2+1-11) ...
+Selecting previously unselected package libotf0:amd64.
+Preparing to unpack .../4-libotf0_0.9.13-3build1_amd64.deb ...
+Unpacking libotf0:amd64 (0.9.13-3build1) ...
+Selecting previously unselected package m17n-db.
+Preparing to unpack .../5-m17n-db_1.7.0-2_all.deb ...
+Unpacking m17n-db (1.7.0-2) ...
+Selecting previously unselected package libm17n-0:amd64.
+Preparing to unpack .../6-libm17n-0_1.7.0-3build1_amd64.deb ...
+Unpacking libm17n-0:amd64 (1.7.0-3build1) ...
+Selecting previously unselected package emacs-gtk.
+Preparing to unpack .../7-emacs-gtk_1%3a25.2+1-11_amd64.deb ...
+Unpacking emacs-gtk (1:25.2+1-11) ...
+Selecting previously unselected package emacs.
+Preparing to unpack .../8-emacs_1%3a25.2+1-11_all.deb ...
+Unpacking emacs (1:25.2+1-11) ...
+Selecting previously unselected package emacs-el.
+Preparing to unpack .../9-emacs-el_1%3a25.2+1-11_all.deb ...
+Unpacking emacs-el (1:25.2+1-11) ...
+Setting up liblockfile-bin (1.14-1.1) ...
+Processing triggers for mime-support (3.60ubuntu1) ...
+Processing triggers for desktop-file-utils (0.23-3ubuntu2) ...
+Setting up libotf0:amd64 (0.9.13-3build1) ...
+Processing triggers for install-info (6.5.0.dfsg.1-4) ...
+Setting up liblockfile1:amd64 (1.14-1.1) ...
+Setting up m17n-db (1.7.0-2) ...
+Processing triggers for libc-bin (2.28-0ubuntu1) ...
+Setting up libm17n-0:amd64 (1.7.0-3build1) ...
+Processing triggers for man-db (2.8.4-2) ...
+Setting up emacs-common (1:25.2+1-11) ...
+Processing triggers for gnome-menus (3.13.3-11ubuntu2) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Setting up emacs-bin-common (1:25.2+1-11) ...
+update-alternatives: using /usr/bin/ctags.emacs to provide /usr/bin/ctags (ctags) in auto mode
+update-alternatives: using /usr/bin/ebrowse.emacs to provide /usr/bin/ebrowse (ebrowse) in auto mode
+update-alternatives: using /usr/bin/emacsclient.emacs to provide /usr/bin/emacsclient (emacsclient) in auto mode
+update-alternatives: using /usr/bin/etags.emacs to provide /usr/bin/etags (etags) in auto mode
+Setting up emacs-el (1:25.2+1-11) ...
+Setting up emacs-gtk (1:25.2+1-11) ...
+update-alternatives: using /usr/bin/emacs-gtk to provide /usr/bin/emacs (emacs) in auto mode
+Install emacsen-common for emacs
+emacsen-common: Handling install of emacsen flavor emacs
+Install dictionaries-common for emacs
+install/dictionaries-common: Byte-compiling for emacsen flavour emacs
+Setting up emacs (1:25.2+1-11) ...
+Processing triggers for libc-bin (2.28-0ubuntu1) ...
+shylesh@shylesh:~$ sudo apt-get upgrade
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Calculating upgrade... Done
+The following packages were automatically installed and are no longer required:
+  libeclipse-osgi-java libeclipse-osgi-services-java libeclipse-osgi-util-java
+  libmessaging-menu0 linux-headers-4.18.0-10 linux-headers-4.18.0-10-generic
+  linux-image-4.18.0-10-generic linux-modules-4.18.0-10-generic
+  linux-modules-extra-4.18.0-10-generic
+Use 'sudo apt autoremove' to remove them.
+The following packages have been kept back:
+  libservlet3.1-java linux-generic linux-headers-generic linux-image-generic
+The following packages will be upgraded:
+  ant ant-optional apache2 apache2-bin apache2-data apache2-utils apport
+  apport-gtk apt apt-utils bind9-host busybox-initramfs busybox-static
+  chromium-codecs-ffmpeg-extra console-setup console-setup-linux cups cups-bsd
+  cups-client cups-common cups-core-drivers cups-daemon cups-ipp-utils
+  cups-ppdc cups-server-common deja-dup desktop-file-utils distro-info-data
+  dnsutils docker.io e2fsprogs ecj file firefox firefox-locale-en
+  fonts-opensymbol fwupd fwupd-signed gdm3 gedit gedit-common ghostscript
+  ghostscript-x gir1.2-gdm-1.0 gir1.2-gtk-3.0 gir1.2-javascriptcoregtk-4.0
+  gir1.2-mutter-3 gir1.2-nm-1.0 gir1.2-packagekitglib-1.0 gir1.2-pango-1.0
+  gir1.2-polkit-1.0 gir1.2-snapd-1 gir1.2-totem-1.0 gir1.2-upowerglib-1.0
+  gir1.2-webkit2-4.0 gjs gkbd-capplet gnome-control-center
+  gnome-control-center-data gnome-control-center-faces gnome-initial-setup
+  gnome-settings-daemon gnome-settings-daemon-schemas gnome-shell
+  gnome-shell-common gnome-shell-extension-ubuntu-dock gnome-software
+  gnome-software-common gnome-software-plugin-snap grub-common grub-pc
+  grub-pc-bin grub2-common gstreamer1.0-packagekit gtk-update-icon-cache gvfs
+  gvfs-backends gvfs-bin gvfs-common gvfs-daemons gvfs-fuse gvfs-libs
+  ibverbs-providers initramfs-tools initramfs-tools-bin initramfs-tools-core
+  ipxe-qemu irqbalance jarwrapper junit4 keyboard-configuration kmod
+  libapt-inst2.0 libapt-pkg5.0 libarchive13 libasound2 libasound2-data
+  libbind9-160 libboost-date-time1.67.0 libboost-filesystem1.67.0
+  libboost-iostreams1.67.0 libboost-locale1.67.0 libboost-regex1.67.0
+  libboost-system1.67.0 libboost-thread1.67.0 libcairo-gobject2 libcairo2
+  libcom-err2 libcommons-collections3-java libcommons-httpclient-java libcups2
+  libcupscgi1 libcupsimage2 libcupsmime1 libcupsppdc1 libcurl3-gnutls
+  libdns-export1102 libdns1102 libdw1 libecj-java libeclipse-osgi-java
+  libeclipse-osgi-services-java libeclipse-osgi-util-java libegl-mesa0
+  libegl1-mesa libelf1 libequinox-osgi-java libext2fs2 libfwupd2 libgail-3-0
+  libgbm1 libgd3 libgdm1 libgjs0g libgl1-mesa-dri libglapi-mesa libglx-mesa0
+  libgnomekbd-common libgnomekbd8 libgnutls30 libgs9 libgs9-common libgtk-3-0
+  libgtk-3-bin libgtk-3-common libibverbs1 libidn11 libirs160 libisc-export169
+  libisc169 libisccc160 libisccfg160 libjavascriptcoregtk-4.0-18
+  libjetty9-java libkmod2 libldap-2.4-2 libldap-common libldb1 liblua5.3-0
+  liblwres160 liblxc-common liblxc1 libmagic-mgc libmagic1 libmutter-3-0
+  libnautilus-extension1a libnm0 libnss-systemd libnss3 libntfs-3g88
+  libpackagekit-glib2-18 libpam-cgfs libpam-modules libpam-modules-bin
+  libpam-runtime libpam-systemd libpam0g libpango-1.0-0 libpangocairo-1.0-0
+  libpangoft2-1.0-0 libpangoxft-1.0-0 libpolkit-agent-1-0
+  libpolkit-backend-1-0 libpolkit-gobject-1-0 libpoppler-glib8 libpoppler79
+  libpq5 libpulse-mainloop-glib0 libpulse0 libpulsedsp libqt5core5a
+  libqt5dbus5 libqt5gui5 libqt5network5 libqt5widgets5 librados2 librbd1
+  librdmacm1 libreoffice-avmedia-backend-gstreamer libreoffice-base-core
+  libreoffice-calc libreoffice-common libreoffice-core libreoffice-draw
+  libreoffice-gnome libreoffice-gtk3 libreoffice-help-en-us
+  libreoffice-impress libreoffice-math libreoffice-ogltrans
+  libreoffice-pdfimport libreoffice-style-breeze libreoffice-style-colibre
+  libreoffice-style-elementary libreoffice-style-tango libreoffice-writer
+  libsmbclient libsnapd-glib1 libss2 libssl1.0.0 libsystemd0 libtiff5
+  libtomcat8-java libtotem0 libu2f-udev libudev1 libunistring2 libupower-glib3
+  libvirt-clients libvirt-daemon libvirt-daemon-driver-storage-rbd
+  libvirt-daemon-system libvirt0 libwayland-client0 libwayland-cursor0
+  libwayland-egl1 libwayland-server0 libwbclient0 libwebkit2gtk-4.0-37
+  libxatracker2 libxslt1.1 linux-firmware linux-libc-dev lxc lxc-utils lxcfs
+  mesa-va-drivers mesa-vdpau-drivers mutter mutter-common nautilus
+  nautilus-data netplan.io network-manager
+  network-manager-config-connectivity-ubuntu ntfs-3g openjdk-11-jdk
+  openjdk-11-jdk-headless openjdk-11-jre openjdk-11-jre-headless
+  openssh-client packagekit packagekit-tools policykit-1 poppler-utils psmisc
+  pulseaudio pulseaudio-module-bluetooth pulseaudio-utils python3-apport
+  python3-distro-info python3-distupgrade python3-problem-report
+  python3-software-properties python3-uno python3-update-manager
+  qemu-block-extra qemu-kvm qemu-system-common qemu-system-data
+  qemu-system-gui qemu-system-x86 qemu-utils qt5-gtk-platformtheme samba-libs
+  shotwell shotwell-common snapd software-properties-common
+  software-properties-gtk systemd systemd-sysv thermald totem totem-common
+  totem-plugins ubuntu-desktop ubuntu-minimal ubuntu-release-upgrader-core
+  ubuntu-release-upgrader-gtk ubuntu-software ubuntu-standard udev ufw
+  unattended-upgrades uno-libs3 update-manager update-manager-core upower ure
+  wget wpasupplicant xdg-desktop-portal xkb-data
+314 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
+Need to get 591 MB/675 MB of archives.
+After this operation, 47.2 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libudev1 amd64 239-7ubuntu10.13 [54.3 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 udev amd64 239-7ubuntu10.13 [1,129 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libnss-systemd amd64 239-7ubuntu10.13 [110 kB]
+Get:4 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 systemd-sysv amd64 239-7ubuntu10.13 [9,404 B]
+Get:5 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libpam-systemd amd64 239-7ubuntu10.13 [113 kB]
+Get:6 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 systemd amd64 239-7ubuntu10.13 [2,972 kB]
+Get:7 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libsystemd0 amd64 239-7ubuntu10.13 [211 kB]
+Get:8 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 librbd1 amd64 13.2.4+dfsg1-0ubuntu0.18.10.1 [1,036 kB]
+Get:9 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 librados2 amd64 13.2.4+dfsg1-0ubuntu0.18.10.1 [2,524 kB]
+Get:10 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libunistring2 amd64 0.9.10-1ubuntu1.18.10.1 [378 kB]
+Get:11 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libgnutls30 amd64 3.6.4-2ubuntu1.1 [746 kB]
+Get:12 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libpam0g amd64 1.1.8-3.6ubuntu3 [55.1 kB]
+Get:13 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libpam-modules-bin amd64 1.1.8-3.6ubuntu3 [37.1 kB]
+Get:14 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libpam-modules amd64 1.1.8-3.6ubuntu3 [241 kB]
+Get:15 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libpam-runtime all 1.1.8-3.6ubuntu3 [37.1 kB]
+Get:16 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 kmod amd64 25-1ubuntu1.2 [91.2 kB]
+Get:17 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libkmod2 amd64 25-1ubuntu1.2 [41.7 kB]
+Get:18 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libapt-pkg5.0 amd64 1.7.4 [816 kB]
+Get:19 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libapt-inst2.0 amd64 1.7.4 [56.7 kB]
+Get:20 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 snapd amd64 2.38+18.10 [13.4 MB]
+Get:21 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 apt amd64 1.7.4 [1,176 kB]
+Get:22 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 apt-utils amd64 1.7.4 [207 kB]
+Get:23 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libext2fs2 amd64 1.44.4-2ubuntu0.2 [159 kB]
+Get:24 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 e2fsprogs amd64 1.44.4-2ubuntu0.2 [514 kB]
+Get:25 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 console-setup-linux all 1.178ubuntu9.1 [982 kB]
+Get:26 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 console-setup all 1.178ubuntu9.1 [105 kB]
+Get:27 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 keyboard-configuration all 1.178ubuntu9.1 [371 kB]
+Get:28 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 xkb-data all 2.23.1-1ubuntu1.18.10.1 [325 kB]
+Get:29 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libcairo2 amd64 1.15.12-1ubuntu0.1 [583 kB]
+Get:30 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 ghostscript-x amd64 9.26~dfsg+0-0ubuntu0.18.10.8 [43.1 kB]
+Get:31 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libidn11 amd64 1.33-2.2ubuntu1.1 [46.0 kB]
+Get:32 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 ghostscript amd64 9.26~dfsg+0-0ubuntu0.18.10.8 [51.7 kB]
+Get:33 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libgs9 amd64 9.26~dfsg+0-0ubuntu0.18.10.8 [2,388 kB]
+Get:34 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libgs9-common all 9.26~dfsg+0-0ubuntu0.18.10.8 [5,093 kB]
+Get:35 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libcom-err2 amd64 1.44.4-2ubuntu0.2 [8,984 B]
+Get:36 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libss2 amd64 1.44.4-2ubuntu0.2 [11.1 kB]
+Get:36 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libss2 amd64 1.44.4-2ubuntu0.2 [11.1 kB]
+Get:37 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 distro-info-data all 0.38ubuntu0.2 [4,660 B]
+Get:38 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 netplan.io amd64 0.96-0ubuntu0.18.10.2 [60.2 kB]
+Get:39 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 ubuntu-minimal amd64 1.425.1 [2,920 B]
+Get:40 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 python3-distro-info all 0.18ubuntu0.18.10.2 [9,160 B]
+Get:41 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 ubuntu-release-upgrader-gtk all 1:18.10.11.6 [9,368 B]
+Get:42 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 ubuntu-release-upgrader-core all 1:18.10.11.6 [22.7 kB]
+Get:43 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 python3-distupgrade all 1:18.10.11.6 [107 kB]
+Get:44 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 update-manager all 1:18.10.10.2 [551 kB]
+Get:45 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 update-manager-core all 1:18.10.10.2 [8,492 B]
+Get:46 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 python3-update-manager all 1:18.10.10.2 [35.3 kB]
+Get:47 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libgail-3-0 amd64 3.24.4-0ubuntu1 [21.5 kB]
+Get:48 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libcairo-gobject2 amd64 1.15.12-1ubuntu0.1 [17.3 kB]
+Get:49 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libgtk-3-common all 3.24.4-0ubuntu1 [232 kB]
+Get:50 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libgtk-3-0 amd64 3.24.4-0ubuntu1 [2,541 kB]
+Get:51 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gir1.2-gtk-3.0 amd64 3.24.4-0ubuntu1 [195 kB]
+Get:52 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gir1.2-mutter-3 amd64 3.30.2-1~ubuntu18.10.4 [139 kB]
+Get:53 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 mutter-common all 3.30.2-1~ubuntu18.10.4 [12.4 kB]
+Get:54 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libgl1-mesa-dri amd64 18.2.8-0ubuntu0~18.10.2 [6,566 kB]
+Get:55 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libglx-mesa0 amd64 18.2.8-0ubuntu0~18.10.2 [135 kB]
+Get:56 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libglapi-mesa amd64 18.2.8-0ubuntu0~18.10.2 [23.5 kB]
+Get:57 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libegl-mesa0 amd64 18.2.8-0ubuntu0~18.10.2 [88.0 kB]
+Get:58 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libgbm1 amd64 18.2.8-0ubuntu0~18.10.2 [24.5 kB]
+Get:59 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libmutter-3-0 amd64 3.30.2-1~ubuntu18.10.4 [1,225 kB]
+Get:60 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gnome-settings-daemon amd64 3.30.1.2-1ubuntu3.1 [321 kB]
+Get:61 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gnome-settings-daemon-schemas all 3.30.1.2-1ubuntu3.1 [14.9 kB]
+Get:62 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libpulsedsp amd64 1:12.2-0ubuntu5 [21.5 kB]
+Get:63 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 pulseaudio-utils amd64 1:12.2-0ubuntu5 [54.2 kB]
+Get:64 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gir1.2-snapd-1 amd64 1.47-0ubuntu0.18.10.0 [11.4 kB]
+Get:65 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libsnapd-glib1 amd64 1.47-0ubuntu0.18.10.0 [73.9 kB]
+Get:66 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 pulseaudio-module-bluetooth amd64 1:12.2-0ubuntu5 [57.2 kB]
+Get:67 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 pulseaudio amd64 1:12.2-0ubuntu5 [793 kB]
+Get:68 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libpulse-mainloop-glib0 amd64 1:12.2-0ubuntu5 [11.5 kB]
+Get:69 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libpulse0 amd64 1:12.2-0ubuntu5 [261 kB]
+Get:70 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libupower-glib3 amd64 0.99.8-2ubuntu0.2 [42.9 kB]
+Get:71 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gnome-shell amd64 3.30.2-0ubuntu1.18.10.1 [674 kB]
+Get:72 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 mutter amd64 3.30.2-1~ubuntu18.10.4 [15.5 kB]
+Get:73 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gir1.2-upowerglib-1.0 amd64 0.99.8-2ubuntu0.2 [5,272 B]
+Get:74 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gnome-shell-common all 3.30.2-0ubuntu1.18.10.1 [184 kB]
+Get:75 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libxslt1.1 amd64 1.1.32-2ubuntu0.1 [150 kB]
+Get:76 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libwebkit2gtk-4.0-37 amd64 2.24.1-0ubuntu0.18.10.2 [11.3 MB]
+Get:77 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libjavascriptcoregtk-4.0-18 amd64 2.24.1-0ubuntu0.18.10.2 [4,782 kB]
+Get:78 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gir1.2-webkit2-4.0 amd64 2.24.1-0ubuntu0.18.10.2 [68.5 kB]
+Ign:79 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gir1.2-javascriptcoregtk-4.0 amd64 2.24.1-0ubuntu0.18.10.2
+Get:80 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 ubuntu-standard amd64 1.425.1 [2,960 B]
+Get:81 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 ufw all 0.36-0ubuntu0.18.10.1 [146 kB]
+Get:79 http://security.ubuntu.com/ubuntu cosmic-updates/main amd64 gir1.2-javascriptcoregtk-4.0 amd64 2.24.1-0ubuntu0.18.10.2 [21.9 kB]
+Get:82 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 openjdk-11-jdk-headless amd64 11.0.2+9-3ubuntu1~18.10.3 [217 MB]
+Get:82 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 openjdk-11-jdk-headless amd64 11.0.2+9-3ubuntu1~18.10.3 [217 MB]
+Ign:82 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 openjdk-11-jdk-headless amd64 11.0.2+9-3ubuntu1~18.10.3
+Ign:83 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 openjdk-11-jre-headless amd64 11.0.2+9-3ubuntu1~18.10.3
+Ign:84 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 ant all 1.10.5-3~18.04
+Err:85 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 grub-pc amd64 2.02+dfsg1-5ubuntu8.3
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:86 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 grub-pc-bin amd64 2.02+dfsg1-5ubuntu8.3
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:87 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 grub2-common amd64 2.02+dfsg1-5ubuntu8.3
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:88 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 grub-common amd64 2.02+dfsg1-5ubuntu8.3
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Ign:89 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 python3-problem-report all 2.20.10-0ubuntu13.2
+Ign:90 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 python3-apport all 2.20.10-0ubuntu13.2
+Ign:91 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 apport all 2.20.10-0ubuntu13.2
+Ign:92 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 apport-gtk all 2.20.10-0ubuntu13.2
+Err:93 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libpackagekit-glib2-18 amd64 1.1.10-1ubuntu7.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:94 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 deja-dup amd64 38.0-1ubuntu0.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Ign:95 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 libecj-java all 3.16.0-1~18.04
+Ign:96 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 ecj all 3.16.0-1~18.04
+Ign:97 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 firefox amd64 66.0.3+build1-0ubuntu0.18.10.1
+Ign:98 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 firefox-locale-en amd64 66.0.3+build1-0ubuntu0.18.10.1
+Ign:99 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 fonts-opensymbol all 2:102.10+LibO6.1.5-0ubuntu0.18.10.1
+Err:100 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 fwupd-signed amd64 1.2.0ubuntu0.1+1.1.2-1ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:101 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libfwupd2 amd64 1.1.2-1ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:102 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 fwupd amd64 1.1.2-1ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:103 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gir1.2-packagekitglib-1.0 amd64 1.1.10-1ubuntu7.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Ign:104 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gnome-control-center-data all 1:3.30.2-1ubuntu0.18.10.2
+Err:105 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gnome-control-center amd64 1:3.30.2-1ubuntu0.18.10.2
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Ign:106 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gnome-control-center-faces all 1:3.30.2-1ubuntu0.18.10.2
+Err:107 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gnome-software-plugin-snap amd64 3.30.2-0ubuntu10
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:108 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gnome-software amd64 3.30.2-0ubuntu10
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Ign:109 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gnome-software-common all 3.30.2-0ubuntu10
+Err:110 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 packagekit-tools amd64 1.1.10-1ubuntu7.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:111 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gstreamer1.0-packagekit amd64 1.1.10-1ubuntu7.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:112 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 packagekit amd64 1.1.10-1ubuntu7.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:113 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gtk-update-icon-cache amd64 3.24.4-0ubuntu1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Ign:114 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 ipxe-qemu all 1.0.0+git-20180124.fbe8c52d-0ubuntu4.1
+Ign:115 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 jarwrapper all 0.72.1~18.04.1
+Ign:116 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 junit4 all 4.12-8~18.04
+Err:117 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libboost-date-time1.67.0 amd64 1.67.0-7ubuntu0.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:118 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libboost-system1.67.0 amd64 1.67.0-7ubuntu0.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:119 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libboost-filesystem1.67.0 amd64 1.67.0-7ubuntu0.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:120 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libboost-iostreams1.67.0 amd64 1.67.0-7ubuntu0.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:121 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libboost-thread1.67.0 amd64 1.67.0-7ubuntu0.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:122 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libboost-locale1.67.0 amd64 1.67.0-7ubuntu0.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:123 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 libboost-regex1.67.0 amd64 1.67.0-7ubuntu0.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Ign:124 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 libcommons-collections3-java all 3.2.2-2~18.04
+Ign:125 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 libcommons-httpclient-java all 3.1-15~18.04
+Ign:126 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 libeclipse-osgi-java all 3.13.100+eclipse4.9-1~18.04
+Ign:127 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 libeclipse-osgi-util-java all 3.5.100+eclipse4.9-1~18.04
+Ign:128 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 libeclipse-osgi-services-java all 3.7.100+eclipse4.9-1~18.04
+Err:129 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libegl1-mesa amd64 18.2.8-0ubuntu0~18.10.2
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Ign:130 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 libequinox-osgi-java all 3.9.1-4~18.04
+Err:131 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libgtk-3-bin amd64 3.24.4-0ubuntu1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Ign:132 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 libjetty9-java all 9.4.15-1~18.04.1ubuntu1
+Ign:133 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 liblua5.3-0 amd64 5.3.3-1ubuntu0.18.10.1
+Err:134 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libpq5 amd64 10.7-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:135 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libqt5core5a amd64 5.11.1+dfsg-7ubuntu3
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:136 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libqt5dbus5 amd64 5.11.1+dfsg-7ubuntu3
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:137 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 qt5-gtk-platformtheme amd64 5.11.1+dfsg-7ubuntu3
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:138 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libqt5network5 amd64 5.11.1+dfsg-7ubuntu3
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:139 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libqt5gui5 amd64 5.11.1+dfsg-7ubuntu3
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:140 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libqt5widgets5 amd64 5.11.1+dfsg-7ubuntu3
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:141 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 ure amd64 6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:142 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 uno-libs3 amd64 6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:143 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-calc amd64 1:6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:144 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-impress amd64 1:6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:145 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-draw amd64 1:6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:146 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-gnome amd64 1:6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:147 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-gtk3 amd64 1:6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:148 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 python3-uno amd64 1:6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:149 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-ogltrans amd64 1:6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:150 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-math amd64 1:6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Ign:151 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-style-tango all 1:6.1.5-0ubuntu0.18.10.1
+Ign:152 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-style-elementary all 1:6.1.5-0ubuntu0.18.10.1
+Ign:153 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-style-colibre all 1:6.1.5-0ubuntu0.18.10.1
+Ign:154 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-style-breeze all 1:6.1.5-0ubuntu0.18.10.1
+Ign:155 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-pdfimport all 1:6.1.5-0ubuntu0.18.10.1
+Ign:156 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-common all 1:6.1.5-0ubuntu0.18.10.1
+Err:157 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-base-core amd64 1:6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:158 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-avmedia-backend-gstreamer amd64 1:6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:159 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-writer amd64 1:6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:160 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-core amd64 1:6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Ign:161 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-help-en-us all 1:6.1.5-0ubuntu0.18.10.1
+Ign:162 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 libtomcat8-java all 8.5.39-1ubuntu1~18.10
+Err:163 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libxatracker2 amd64 18.2.8-0ubuntu0~18.10.2
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Ign:164 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-firmware all 1.175.3
+Ign:165 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-libc-dev amd64 4.18.0-17.18
+Err:166 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 mesa-va-drivers amd64 18.2.8-0ubuntu0~18.10.2
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:167 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 mesa-vdpau-drivers amd64 18.2.8-0ubuntu0~18.10.2
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Ign:168 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 wpasupplicant amd64 2:2.6-18ubuntu1.1
+Ign:169 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 qemu-system-data all 1:2.12+dfsg-3ubuntu8.6
+Ign:170 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 qemu-kvm amd64 1:2.12+dfsg-3ubuntu8.6
+Ign:171 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 qemu-system-x86 amd64 1:2.12+dfsg-3ubuntu8.6
+Ign:172 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 qemu-system-gui amd64 1:2.12+dfsg-3ubuntu8.6
+Err:173 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 thermald amd64 1.7.0-8ubuntu1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:174 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 ubuntu-desktop amd64 1.425.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Ign:175 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 ubuntu-software all 3.30.2-0ubuntu10
+Ign:176 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 unattended-upgrades all 1.5ubuntu3.18.10.3
+Err:177 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 upower amd64 0.99.8-2ubuntu0.2
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:178 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 xdg-desktop-portal amd64 1.0.3-0ubuntu1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Ign:84 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 ant all 1.10.5-3~18.04
+Err:89 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 python3-problem-report all 2.20.10-0ubuntu13.2
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:90 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 python3-apport all 2.20.10-0ubuntu13.2
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:91 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 apport all 2.20.10-0ubuntu13.2
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:92 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 apport-gtk all 2.20.10-0ubuntu13.2
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Ign:95 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 libecj-java all 3.16.0-1~18.04
+Ign:96 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 ecj all 3.16.0-1~18.04
+Err:99 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 fonts-opensymbol all 2:102.10+LibO6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:104 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gnome-control-center-data all 1:3.30.2-1ubuntu0.18.10.2
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:106 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gnome-control-center-faces all 1:3.30.2-1ubuntu0.18.10.2
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:109 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 gnome-software-common all 3.30.2-0ubuntu10
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:114 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 ipxe-qemu all 1.0.0+git-20180124.fbe8c52d-0ubuntu4.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Ign:115 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 jarwrapper all 0.72.1~18.04.1
+Ign:116 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 junit4 all 4.12-8~18.04
+Ign:124 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 libcommons-collections3-java all 3.2.2-2~18.04
+Ign:125 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 libcommons-httpclient-java all 3.1-15~18.04
+Ign:126 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 libeclipse-osgi-java all 3.13.100+eclipse4.9-1~18.04
+Ign:127 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 libeclipse-osgi-util-java all 3.5.100+eclipse4.9-1~18.04
+Ign:128 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 libeclipse-osgi-services-java all 3.7.100+eclipse4.9-1~18.04
+Ign:130 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 libequinox-osgi-java all 3.9.1-4~18.04
+Ign:132 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 libjetty9-java all 9.4.15-1~18.04.1ubuntu1
+Err:151 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-style-tango all 1:6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:152 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-style-elementary all 1:6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:153 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-style-colibre all 1:6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:154 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-style-breeze all 1:6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:155 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-pdfimport all 1:6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:156 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-common all 1:6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:161 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libreoffice-help-en-us all 1:6.1.5-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Ign:162 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 libtomcat8-java all 8.5.39-1ubuntu1~18.10
+Err:164 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-firmware all 1.175.3
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Ign:169 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 qemu-system-data all 1:2.12+dfsg-3ubuntu8.6
+Err:175 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 ubuntu-software all 3.30.2-0ubuntu10
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:176 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 unattended-upgrades all 1.5ubuntu3.18.10.3
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Get:82 http://security.ubuntu.com/ubuntu cosmic-updates/main amd64 openjdk-11-jdk-headless amd64 11.0.2+9-3ubuntu1~18.10.3 [217 MB]
+Err:82 http://security.ubuntu.com/ubuntu cosmic-updates/main amd64 openjdk-11-jdk-headless amd64 11.0.2+9-3ubuntu1~18.10.3
+  Connection failed [IP: 91.189.88.162 80]
+Get:83 http://security.ubuntu.com/ubuntu cosmic-updates/main amd64 openjdk-11-jre-headless amd64 11.0.2+9-3ubuntu1~18.10.3 [36.9 MB]
+Get:83 http://security.ubuntu.com/ubuntu cosmic-updates/main amd64 openjdk-11-jre-headless amd64 11.0.2+9-3ubuntu1~18.10.3 [36.9 MB]
+Get:83 http://security.ubuntu.com/ubuntu cosmic-updates/main amd64 openjdk-11-jre-headless amd64 11.0.2+9-3ubuntu1~18.10.3 [36.9 MB]
+Err:83 http://security.ubuntu.com/ubuntu cosmic-updates/main amd64 openjdk-11-jre-headless amd64 11.0.2+9-3ubuntu1~18.10.3
+  Could not connect to security.ubuntu.com:80 (91.189.88.162). - connect (113: No route to host) [IP: 91.189.88.162 80]
+Err:97 http://security.ubuntu.com/ubuntu cosmic-updates/main amd64 firefox amd64 66.0.3+build1-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:98 http://security.ubuntu.com/ubuntu cosmic-updates/main amd64 firefox-locale-en amd64 66.0.3+build1-0ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:133 http://security.ubuntu.com/ubuntu cosmic-updates/main amd64 liblua5.3-0 amd64 5.3.3-1ubuntu0.18.10.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:165 http://security.ubuntu.com/ubuntu cosmic-updates/main amd64 linux-libc-dev amd64 4.18.0-17.18
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:168 http://security.ubuntu.com/ubuntu cosmic-updates/main amd64 wpasupplicant amd64 2:2.6-18ubuntu1.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:170 http://security.ubuntu.com/ubuntu cosmic-updates/main amd64 qemu-kvm amd64 1:2.12+dfsg-3ubuntu8.6
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:171 http://security.ubuntu.com/ubuntu cosmic-updates/main amd64 qemu-system-x86 amd64 1:2.12+dfsg-3ubuntu8.6
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:172 http://security.ubuntu.com/ubuntu cosmic-updates/main amd64 qemu-system-gui amd64 1:2.12+dfsg-3ubuntu8.6
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Ign:84 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 ant all 1.10.5-3~18.04
+Ign:95 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 libecj-java all 3.16.0-1~18.04
+Ign:96 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 ecj all 3.16.0-1~18.04
+Ign:115 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 jarwrapper all 0.72.1~18.04.1
+Ign:116 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 junit4 all 4.12-8~18.04
+Ign:124 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 libcommons-collections3-java all 3.2.2-2~18.04
+Ign:125 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 libcommons-httpclient-java all 3.1-15~18.04
+Ign:126 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 libeclipse-osgi-java all 3.13.100+eclipse4.9-1~18.04
+Ign:127 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 libeclipse-osgi-util-java all 3.5.100+eclipse4.9-1~18.04
+Ign:128 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 libeclipse-osgi-services-java all 3.7.100+eclipse4.9-1~18.04
+Ign:130 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 libequinox-osgi-java all 3.9.1-4~18.04
+Ign:132 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 libjetty9-java all 9.4.15-1~18.04.1ubuntu1
+Ign:162 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 libtomcat8-java all 8.5.39-1ubuntu1~18.10
+Ign:169 http://security.ubuntu.com/ubuntu cosmic-updates/main amd64 qemu-system-data all 1:2.12+dfsg-3ubuntu8.6
+Err:84 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 ant all 1.10.5-3~18.04
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:95 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 libecj-java all 3.16.0-1~18.04
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:96 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 ecj all 3.16.0-1~18.04
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:115 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 jarwrapper all 0.72.1~18.04.1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:116 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 junit4 all 4.12-8~18.04
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:124 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 libcommons-collections3-java all 3.2.2-2~18.04
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:125 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 libcommons-httpclient-java all 3.1-15~18.04
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:126 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 libeclipse-osgi-java all 3.13.100+eclipse4.9-1~18.04
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:127 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 libeclipse-osgi-util-java all 3.5.100+eclipse4.9-1~18.04
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:128 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 libeclipse-osgi-services-java all 3.7.100+eclipse4.9-1~18.04
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:130 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 libequinox-osgi-java all 3.9.1-4~18.04
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:132 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 libjetty9-java all 9.4.15-1~18.04.1ubuntu1
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:162 http://security.ubuntu.com/ubuntu cosmic-updates/universe amd64 libtomcat8-java all 8.5.39-1ubuntu1~18.10
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Err:169 http://security.ubuntu.com/ubuntu cosmic-updates/main amd64 qemu-system-data all 1:2.12+dfsg-3ubuntu8.6
+  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+Fetched 67.2 MB in 27min 46s (40.3 kB/s)
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-11-jdk-headless_11.0.2+9-3ubuntu1~18.10.3_amd64.deb  Connection failed [IP: 91.189.88.162 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-11-jre-headless_11.0.2+9-3ubuntu1~18.10.3_amd64.deb  Could not connect to security.ubuntu.com:80 (91.189.88.162). - connect (113: No route to host) [IP: 91.189.88.162 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/universe/a/ant/ant_1.10.5-3~18.04_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/g/grub2/grub-pc_2.02+dfsg1-5ubuntu8.3_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/g/grub2/grub-pc-bin_2.02+dfsg1-5ubuntu8.3_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/g/grub2/grub2-common_2.02+dfsg1-5ubuntu8.3_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/g/grub2/grub-common_2.02+dfsg1-5ubuntu8.3_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/a/apport/python3-problem-report_2.20.10-0ubuntu13.2_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/a/apport/python3-apport_2.20.10-0ubuntu13.2_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/a/apport/apport_2.20.10-0ubuntu13.2_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/a/apport/apport-gtk_2.20.10-0ubuntu13.2_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/p/packagekit/libpackagekit-glib2-18_1.1.10-1ubuntu7.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/d/deja-dup/deja-dup_38.0-1ubuntu0.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/universe/e/ecj/libecj-java_3.16.0-1~18.04_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/universe/e/ecj/ecj_3.16.0-1~18.04_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/f/firefox/firefox_66.0.3+build1-0ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/f/firefox/firefox-locale-en_66.0.3+build1-0ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/fonts-opensymbol_102.10+LibO6.1.5-0ubuntu0.18.10.1_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/f/fwupd-signed/fwupd-signed_1.2.0ubuntu0.1+1.1.2-1ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/f/fwupd/libfwupd2_1.1.2-1ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/f/fwupd/fwupd_1.1.2-1ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/p/packagekit/gir1.2-packagekitglib-1.0_1.1.10-1ubuntu7.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/g/gnome-control-center/gnome-control-center-data_3.30.2-1ubuntu0.18.10.2_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/g/gnome-control-center/gnome-control-center_3.30.2-1ubuntu0.18.10.2_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/g/gnome-control-center/gnome-control-center-faces_3.30.2-1ubuntu0.18.10.2_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/g/gnome-software/gnome-software-plugin-snap_3.30.2-0ubuntu10_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/g/gnome-software/gnome-software_3.30.2-0ubuntu10_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/g/gnome-software/gnome-software-common_3.30.2-0ubuntu10_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/p/packagekit/packagekit-tools_1.1.10-1ubuntu7.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/p/packagekit/gstreamer1.0-packagekit_1.1.10-1ubuntu7.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/p/packagekit/packagekit_1.1.10-1ubuntu7.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk-update-icon-cache_3.24.4-0ubuntu1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/i/ipxe/ipxe-qemu_1.0.0+git-20180124.fbe8c52d-0ubuntu4.1_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/universe/j/javatools/jarwrapper_0.72.1~18.04.1_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/universe/j/junit4/junit4_4.12-8~18.04_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/b/boost1.67/libboost-date-time1.67.0_1.67.0-7ubuntu0.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/b/boost1.67/libboost-system1.67.0_1.67.0-7ubuntu0.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/b/boost1.67/libboost-filesystem1.67.0_1.67.0-7ubuntu0.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/b/boost1.67/libboost-iostreams1.67.0_1.67.0-7ubuntu0.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/b/boost1.67/libboost-thread1.67.0_1.67.0-7ubuntu0.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/b/boost1.67/libboost-locale1.67.0_1.67.0-7ubuntu0.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/universe/b/boost1.67/libboost-regex1.67.0_1.67.0-7ubuntu0.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/universe/libc/libcommons-collections3-java/libcommons-collections3-java_3.2.2-2~18.04_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/universe/c/commons-httpclient/libcommons-httpclient-java_3.1-15~18.04_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/universe/e/equinox-framework/libeclipse-osgi-java_3.13.100+eclipse4.9-1~18.04_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/universe/e/equinox-framework/libeclipse-osgi-util-java_3.5.100+eclipse4.9-1~18.04_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/universe/e/equinox-framework/libeclipse-osgi-services-java_3.7.100+eclipse4.9-1~18.04_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/m/mesa/libegl1-mesa_18.2.8-0ubuntu0~18.10.2_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/universe/libe/libequinox-osgi-java/libequinox-osgi-java_3.9.1-4~18.04_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/libgtk-3-bin_3.24.4-0ubuntu1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/universe/j/jetty9/libjetty9-java_9.4.15-1~18.04.1ubuntu1_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/l/lua5.3/liblua5.3-0_5.3.3-1ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/libpq5_10.7-0ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/libqt5core5a_5.11.1+dfsg-7ubuntu3_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/libqt5dbus5_5.11.1+dfsg-7ubuntu3_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qt5-gtk-platformtheme_5.11.1+dfsg-7ubuntu3_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/libqt5network5_5.11.1+dfsg-7ubuntu3_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/libqt5gui5_5.11.1+dfsg-7ubuntu3_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/libqt5widgets5_5.11.1+dfsg-7ubuntu3_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/ure_6.1.5-0ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/uno-libs3_6.1.5-0ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice-calc_6.1.5-0ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice-impress_6.1.5-0ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice-draw_6.1.5-0ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice-gnome_6.1.5-0ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice-gtk3_6.1.5-0ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/python3-uno_6.1.5-0ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice-ogltrans_6.1.5-0ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice-math_6.1.5-0ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice-style-tango_6.1.5-0ubuntu0.18.10.1_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice-style-elementary_6.1.5-0ubuntu0.18.10.1_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice-style-colibre_6.1.5-0ubuntu0.18.10.1_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice-style-breeze_6.1.5-0ubuntu0.18.10.1_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice-pdfimport_6.1.5-0ubuntu0.18.10.1_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice-common_6.1.5-0ubuntu0.18.10.1_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice-base-core_6.1.5-0ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice-avmedia-backend-gstreamer_6.1.5-0ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice-writer_6.1.5-0ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice-core_6.1.5-0ubuntu0.18.10.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice-l10n/libreoffice-help-en-us_6.1.5-0ubuntu0.18.10.1_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/universe/t/tomcat8/libtomcat8-java_8.5.39-1ubuntu1~18.10_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/m/mesa/libxatracker2_18.2.8-0ubuntu0~18.10.2_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/l/linux-firmware/linux-firmware_1.175.3_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux-libc-dev_4.18.0-17.18_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/universe/m/mesa/mesa-va-drivers_18.2.8-0ubuntu0~18.10.2_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa-vdpau-drivers_18.2.8-0ubuntu0~18.10.2_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/w/wpa/wpasupplicant_2.6-18ubuntu1.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/q/qemu/qemu-system-data_2.12+dfsg-3ubuntu8.6_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/q/qemu/qemu-kvm_2.12+dfsg-3ubuntu8.6_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/q/qemu/qemu-system-x86_2.12+dfsg-3ubuntu8.6_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/q/qemu/qemu-system-gui_2.12+dfsg-3ubuntu8.6_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/t/thermald/thermald_1.7.0-8ubuntu1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-meta/ubuntu-desktop_1.425.1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/g/gnome-software/ubuntu-software_3.30.2-0ubuntu10_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/u/unattended-upgrades/unattended-upgrades_1.5ubuntu3.18.10.3_all.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/u/upower/upower_0.99.8-2ubuntu0.2_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/x/xdg-desktop-portal/xdg-desktop-portal_1.0.3-0ubuntu1_amd64.deb  Unable to connect to in.archive.ubuntu.com:http: [IP: 91.189.88.152 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+shylesh@shylesh:~$ sudo apt-get update
+[sudo] password for shylesh: 
+Hit:1 http://in.archive.ubuntu.com/ubuntu cosmic InRelease
+Get:2 http://security.ubuntu.com/ubuntu cosmic-security InRelease [88.7 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu cosmic-updates InRelease [88.7 kB]   
+Get:4 http://security.ubuntu.com/ubuntu cosmic-security/main i386 Packages [128 kB]
+Get:5 http://in.archive.ubuntu.com/ubuntu cosmic-backports InRelease [74.6 kB] 
+Get:6 http://security.ubuntu.com/ubuntu cosmic-security/main amd64 Packages [161 kB]
+Get:7 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main i386 Packages [252 kB]
+Get:8 http://security.ubuntu.com/ubuntu cosmic-security/main amd64 DEP-11 Metadata [204 B]
+Get:9 http://security.ubuntu.com/ubuntu cosmic-security/universe i386 Packages [156 kB]
+Get:10 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 Packages [286 kB]
+Get:11 http://security.ubuntu.com/ubuntu cosmic-security/universe amd64 Packages [156 kB]
+Get:12 http://security.ubuntu.com/ubuntu cosmic-security/universe Translation-en [91.0 kB]
+Get:13 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main Translation-en [116 kB]
+Get:14 http://security.ubuntu.com/ubuntu cosmic-security/universe amd64 DEP-11 Metadata [24.7 kB]
+Get:15 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 DEP-11 Metadata [143 kB]
+Get:16 http://security.ubuntu.com/ubuntu cosmic-security/universe DEP-11 48x48 Icons [11.4 kB]
+Get:17 http://security.ubuntu.com/ubuntu cosmic-security/universe DEP-11 64x64 Icons [62.3 kB]
+Get:18 http://security.ubuntu.com/ubuntu cosmic-security/multiverse amd64 DEP-11 Metadata [2,464 B]
+Get:19 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main DEP-11 48x48 Icons [36.2 kB]
+Get:20 http://in.archive.ubuntu.com/ubuntu cosmic-updates/main DEP-11 64x64 Icons [56.1 kB]
+Get:21 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 Packages [347 kB]
+Get:22 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe i386 Packages [343 kB]
+Get:23 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe Translation-en [145 kB]
+Get:24 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe amd64 DEP-11 Metadata [70.2 kB]
+Get:25 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe DEP-11 48x48 Icons [43.3 kB]
+Get:26 http://in.archive.ubuntu.com/ubuntu cosmic-updates/universe DEP-11 64x64 Icons [107 kB]
+Get:27 http://in.archive.ubuntu.com/ubuntu cosmic-updates/multiverse amd64 DEP-11 Metadata [2,464 B]
+Get:28 http://in.archive.ubuntu.com/ubuntu cosmic-backports/universe amd64 DEP-11 Metadata [7,356 B]
+Fetched 2,998 kB in 22s (136 kB/s)                                             
+Reading package lists... Done
+

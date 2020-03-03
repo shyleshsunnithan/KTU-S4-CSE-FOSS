@@ -1,0 +1,56 @@
+Script started on 2019-04-08 10:12:13+05:30
+]0;shylesh@shylesh: ~[01;32mshylesh@shylesh[00m:[01;34m~[00m$ scp ./Desktop/FTP_TASK.txt cs17d47@14.139.189.217:~/
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d47@14.139.189.217's password: 
+FTP_TASK.txt                                    0%    0     0.0KB/s   --:-- ETAFTP_TASK.txt                                  100% 4950    18.9KB/s   00:00    
+]0;shylesh@shylesh: ~[01;32mshylesh@shylesh[00m:[01;34m~[00m$ scp ./Desktop/FTP_TASK.txt cs17d47@14.139.189.217:~/[1P[1P[1P[1@r[1@s[1@y[1@n[1@c[C[1@ [1@-[1@r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P cs17d47@14.139.189.217:~/[1P cs17d47@14.139.189.217:~/[1P cs17d47@14.139.189.217:~/[1P cs17d47@14.139.189.217:~/[1P cs17d47@14.139.189.217:~/[1P cs17d47@14.139.189.217:~/[1P cs17d47@14.139.189.217:~/[1P cs17d47@14.139.189.217:~/[1P cs17d47@14.139.189.217:~/[1P cs17d47@14.139.189.217:~/[1P cs17d47@14.139.189.217:~/[1P cs17d47@14.139.189.217:~/T cs17d47@14.139.189.217:~/A cs17d47@14.139.189.217:~/S cs17d47@14.139.189.217:~/K cs17d47@14.139.189.217:~/7 cs17d47@14.139.189.217:~/
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d47@14.139.189.217's password: 
+]0;shylesh@shylesh: ~[01;32mshylesh@shylesh[00m:[01;34m~[00m$ ssh cs17d47@14.139.189.2174[K
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d47@14.139.189.217's password: 
+Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
+
+ * Website:  http://elementary.io/
+
+23 packages can be updated.
+0 updates are security updates.
+
+*** System restart required ***
+Last login: Mon Apr  1 11:57:10 2019 from 49.15.209.53
+$ ls
+CS232  dir2    examples.desktop  manage.py  TASKS
+dir1   Django  FTP_TASK.txt	 TASK7
+$ cd cs  CS232
+$ ls
+TASK  TASK1  TASK2
+$ cd ..
+$ ls
+CS232  dir2    examples.desktop  manage.py  TASKS
+dir1   Django  FTP_TASK.txt	 TASK7
+$ mv TASK  7 CS232
+$ ls
+CS232  dir1  dir2  Django  examples.desktop  FTP_TASK.txt  manage.py  TASKS
+$ cd CS232
+$ ls
+TASK  TASK1  TASK2  TASK7
+$ bye
+-sh: 10: bye: not found
+$ exit
+Connection to 14.139.189.217 closed.
+]0;shylesh@shylesh: ~[01;32mshylesh@shylesh[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2019-04-08 10:15:29+05:30

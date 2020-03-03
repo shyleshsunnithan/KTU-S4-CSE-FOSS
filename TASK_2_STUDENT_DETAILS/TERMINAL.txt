@@ -1,0 +1,108 @@
+shylesh@shylesh:~$ cd Desktop
+shylesh@shylesh:~/Desktop$ mkdir StudentDetails
+shylesh@shylesh:~/Desktop$ cd StudentDetails/
+shylesh@shylesh:~/Desktop/StudentDetails$ grep "CHN" S4D.txt
+   1.      411/17   CHN17CS004     ABIN THOMAS
+   2.      412/17   CHN17CS006     ADERSH A
+   3.      347/17   CHN17CS013     ALEN ANTO ABRAHAM
+   4.      168/17   CHN17CS017     AMAL XAVIER
+   5.      434/17   CHN17CS018     AMRITA AJITH
+   6.      420/17   CHN17CS019     ANAKHA B M
+   7.      394/17   CHN17CS021     ANIJA J
+   8.       26/17   CHN17CS022     ANJALI LAKSHMI
+   9.      382/17   CHN17CS023     ANUJA DEV R
+   10.     119/17   CHN17CS024     ANUROSE K THOMAS
+   11.     311/17   CHN17CS027     ARCHANA ROSE BIJU
+   12.     459/17   CHN17CS029     ARUN R
+   13.     386/17   CHN17CS030     ASHISH MATHEW JOHN
+   14.     388/17   CHN17CS032     ASWIN K
+   15.     113/17   CHN17CS034     ATHIRA SURESH
+   16.     456/17   CHN17CS037     AZHAR K
+   17.     197/17   CHN17CS038     BAMISHA A
+   18.     181/17   CHN17CS041     DARSANA M
+   19.     104/17   CHN17CS044     DEEPAK R
+   20.     160/17   CHN17CS045     DEVIKA KRISHNA
+   21.     172/17   CHN17CS048     GEORGI K JOSEPH
+   22.     121/17   CHN17CS051     GOUTHAM G
+   23.     378/17   CHN17CS052     GOVIND J NAIR
+   24.     143/17   CHN17CS053     GRESHMA SHAJI
+   25.     182/17   CHN17CS054     HARIDEV S
+   26.     154/17   CHN17CS055     HARIKRISHNAN S KARTHA
+   27.     445/17   CHN17CS057     JATHIN SURESH
+   28.      03/17   CHN17CS058     JENY SUSAN RAJAN
+   29.      36/17   CHN17CS063     JOEL JOSEPH
+   30.     151/17   CHN17CS064     JOHAN SAM THOMAS
+   31.     400/17   CHN17CS070     LENA GRACE JOSEPH
+   32.      17/17   CHN17CS071     LINTA MARIAM DANIEL
+   33.     393/17   CHN17CS074     MEGHA ELSA SHIBU
+   34.     389/17   CHN17CS076     MOHAMED SHAHIL K
+   35.     134/17   CHN17CS077     MONIYA MOHAN
+   36.     131/17   CHN17CS080     NIKHIL M TOMY
+   37.      10/17   CHN17CS083     NIRMAL K GEORGE MATHEW
+   38.     441/17   CHN17CS085     NITHYA VENUGOPAL
+   39.     142/17   CHN17CS088     N S ATHUL ANAND
+   40.     169/17   CHN17CS090     PRANAY PRINCE
+   41.     278/17   CHN17CS093     RITHU MARIA JOSE
+   42.     187/17   CHN17CS094     RITTY THOMAS
+   43.     423/17   CHN17CS095     ROSHIN ROY
+   44.     156/17   CHN17CS097     SACHIN R
+   45.     290/17   CHN17CS100     SAYOOJ K
+   46.     139/17   CHN17CS101     SHABEERDAS C
+   47.     115/17   CHN17CS104     SHYLESH S
+   48.     443/17   CHN17CS106     SNEHA JAYAN
+   49.     108/17   CHN17CS109     SREELAL S
+   50.     185/17   CHN17CS110     STEPHEN THOMAS
+   51.     315/17   CHN17CS111     SURYA MERIN PHILIP
+   52.     170/17   CHN17CS113     THWALIB NAZIR
+   53.     381/17   CHN17CS114     VARGHESE P P
+   54.     102/17   CHN17CS115     VIMAL K R
+   55.     192/17   CHN17CS116     VISAKH SEBASTIAN
+   56.     116/17   CHN17CS117     VISHAK P V
+   57.     357/17   CHN17CS118     VISHNU V
+   58.     404/17   CHN17CS119     VYSHAKH R
+   59.     476/17   LCHN17CS122    AMRUTHA S
+   60.     469/17   LCHN17CS124    JACOB MATHEW
+   61.     480/17   LCHN17CS121    AISWARYA J
+   62.     475/17   LCHN17CS123    HARIKRISHNAN U
+shylesh@shylesh:~/Desktop/StudentDetails$ grep "CHN" S4D.txt | awk '{s=""; for (i=3; i<=NF; i++) s=s $i " "; print s}' | sed '/^L.*/d' > S4D_reg_details.txt
+shylesh@shylesh:~/Desktop/StudentDetails$ cd ..
+shylesh@shylesh:~/Desktop$ mkdir s1
+shylesh@shylesh:~/Desktop$ cd s1
+shylesh@shylesh:~/Desktop/s1$ grep --no-group-separator -A3 'CHN17CS' result_CHN.txt > result_cs.txt
+shylesh@shylesh:~/Desktop/s1$ tr '\n' ' ' < result_cs.txt > result_no_newline.txt
+shylesh@shylesh:~/Desktop/s1$ sed 's/\ CHN/\nCHN/g' result_no_newline.txt > result_one_per_line.txt
+shylesh@shylesh:~/Desktop/s1$ cd ..
+shylesh@shylesh:~/Desktop$ mkdir s2
+shylesh@shylesh:~/Desktop$ pdftotext result_CHN(2).pdf -layout
+bash: syntax error near unexpected token `('
+shylesh@shylesh:~/Desktop$ pdftotext result_CHN2.pdf -layout
+I/O Error: Couldn't open file 'result_CHN2.pdf': No such file or directory.
+shylesh@shylesh:~/Desktop$ cd s2
+shylesh@shylesh:~/Desktop/s2$ pdftotext result_CHN2.pdf -layout
+shylesh@shylesh:~/Desktop/s2$ grep --no-group-separator -A3 'CHN17CS' result_CHN2.txt > result_CS.txt
+shylesh@shylesh:~/Desktop/s2$ tr '\n' ' ' < result_CS.txt > result_no_newline.txt
+shylesh@shylesh:~/Desktop/s2$ cat result_no_newline.txt 
+CHN17CS001   CY100(B), BE110(B+), EC100(B+), CY110(O), EC110(A+), MA102(A), BE102(A), CS100(B+),              CS120(O)  CHN17CS002   CY100(B+), BE110(B+), EC100(A), CY110(B+), EC110(A+), MA102(B+), BE102(A),              CS100(Absent), CS120(B+)  CHN17CS003   CY100(C), BE110(C), EC100(B), CY110(B+), EC110(A+), MA102(C), BE102(B+), CS100(C),              CS120(C)  CHN17CS004   CY100(B+), BE110(A), EC100(A), CY110(A+), EC110(O), MA102(A), BE102(B+), CS100(B+),              CS120(O)  CHN17CS005   CY100(B), BE110(A), EC100(A), CY110(A), EC110(O), MA102(F), BE102(A), CS100(F),              CS120(B)  CHN17CS006   CY100(A+), BE110(A+), EC100(O), CY110(A), EC110(A), MA102(O), BE102(B+), CS100(A+),              CS120(O)  CHN17CS007   CY100(B), BE110(B), EE100(B), EC100(C), CY110(A), EC110(O), MA102(F), BE102(B+),              CS100(C), CS120(C)  CHN17CS008   CY100(B+), BE110(B+), EC100(B), CY110(A), EC110(O), MA102(C), BE102(B+), CS100(B+),              CS120(O)  CHN17CS009   CY100(B+), BE110(B), EC100(A), CY110(B), EC110(O), MA102(A), BE102(A), CS100(F),              CS120(B+)  CHN17CS010   CY100(C), BE110(B), EC100(C), CY110(B), EC110(O), MA102(C), BE102(B+), CS100(C),              CS120(B+)  CHN17CS011   CY100(B), BE110(O), EC100(B+), CY110(A+), EC110(O), MA102(B+), BE102(A), CS100(A+),              CS120(O)  CHN17CS012   CY100(O), BE110(O), EC100(A+), CY110(O), EC110(O), MA102(B+), BE102(A), CS100(B+),              CS120(B+) 
+                                                            CHN17CS013   CY100(B+), BE110(A), EC100(B+), CY110(A), EC110(O), MA102(B+), BE102(A), CS100(A+),              CS120(O)  CHN17CS014   CY100(C), BE100(P), BE110(B+), EC100(B), CY110(O), EC110(O), MA102(F), BE102(B+),              CS100(F), CS120(B+)  CHN17CS015   CY100(A), BE110(A), EC100(B+), CY110(A+), EC110(A+), MA102(B), BE102(A), CS100(B),              CS120(B)  CHN17CS016   CY100(B), BE110(A), EC100(B), CY110(O), EC110(A+), MA102(F), BE102(B+), CS100(C),              CS120(B)  CHN17CS017   CY100(A), BE110(A), EC100(B+), CY110(A+), EC110(A+), MA102(A+), BE102(A+), CS100(B+),              CS120(O)  CHN17CS018   PH100(F), CY100(F), BE110(B), EC100(F), CY110(A), EC110(A), MA102(F), BE102(A),              CS100(F), CS120(O)  CHN17CS019   CY100(A+), BE110(B+), EC100(A), CY110(O), EC110(O), MA102(A+), BE102(A), CS100(A),              CS120(O)  CHN17CS020   CY100(B), BE110(A+), EC100(B), CY110(O), EC110(O), MA102(C), BE102(B+), CS100(B),              CS120(B+)  CHN17CS021   CY100(B), BE110(B), EC100(B), CY110(A+), EC110(A+), MA102(B), BE102(A), CS100(B+),              CS120(O)  CHN17CS022   CY100(C), BE100(F), BE110(F), EC100(F), CY110(A), EC110(A), MA102(F), BE102(B),              CS100(C), CS120(B+)  CHN17CS023   CY100(F), BE110(F), EC100(F), CY110(A+), EC110(A), MA102(F), BE102(A+), CS100(F),              CS120(B+)  CHN17CS024   CY100(A), BE110(A+), EC100(A+), CY110(A+), EC110(O), MA102(B), BE102(A+), CS100(B),              CS120(O)  CHN17CS025   CY100(B+), BE110(B+), EC100(B+), CY110(O), EC110(O), MA102(B), BE102(B+), CS100(C),              CS120(B)  CHN17CS026   CY100(B), BE110(F), EC100(B), CY110(O), EC110(O), MA102(C), BE102(B+), CS100(A+),              CS120(O)  CHN17CS027   CY100(B+), BE110(B+), EC100(B), CY110(A+), EC110(A), MA102(C), BE102(A), CS100(O),              CS120(O)  CHN17CS028   CY100(B+), BE110(A+), EC100(B+), CY110(O), EC110(O), MA102(B), BE102(A), CS100(B),              CS120(A+)  CHN17CS029   PH100(F), CY100(C), BE100(F), BE110(B), EC100(F), CY110(A), EC110(A), MA102(F),              BE102(B+), CS100(P), CS120(O)  CHN17CS030   CY100(A+), BE110(O), EC100(B+), CY110(O), EC110(O), MA102(A+), BE102(A), CS100(A+),              CS120(O) 
+ CHN17CS031   CY100(B+), BE100(C), BE110(B+), EC100(B), CY110(A), EC110(O), MA102(F), BE102(A),              CS100(B), CS120(B+)  CHN17CS032   CY100(B), BE110(B+), EC100(C), CY110(A+), EC110(A), MA102(F), BE102(A), CS100(B),              CS120(O)  CHN17CS033   CY100(B), BE110(A+), EC100(B+), CY110(O), EC110(A+), MA102(A+), BE102(A), CS100(C),              CS120(A+)  CHN17CS034   CY100(B+), BE110(B), EC100(B), CY110(A+), EC110(A+), MA102(B+), BE102(A+), CS100(F),              CS120(O)  CHN17CS035   CY100(C), BE100(P), BE110(B), EC100(B), CY110(A), EC110(O), MA102(F), BE102(A),              CS100(F), CS120(B)  CHN17CS036   CY100(A+), BE110(O), EC100(O), CY110(O), EC110(O), MA102(A+), BE102(O), CS100(A),              CS120(B+)  CHN17CS037   PH100(F), CY100(P), BE110(F), EC100(F), CY110(A), EC110(A+), MA102(C), BE102(A),              CS100(B), CS120(O)  CHN17CS038   CY100(F), BE110(F), EC100(C), CY110(A), EC110(A), MA102(F), BE102(B+), CS100(F),              CS120(B+)  CHN17CS039   CY100(C), BE110(O), EC100(C), CY110(B+), EC110(O), MA102(B), BE102(A), CS100(B),              CS120(A+)  CHN17CS040   CY100(A+), BE110(O), EC100(A+), CY110(O), EC110(O), MA102(O), BE102(A+), CS100(B+),              CS120(B+)  CHN17CS041   PH100(B), CY100(A), BE110(A+), EC100(B), CY110(A+), EC110(A+), MA102(B), BE102(A+),              CS100(B+), CS120(O)  CHN17CS042   PH100(F), CY100(F), BE110(B+), EC100(F), CY110(B+), EC110(O), MA102(F), BE102(A+),              CS100(B), CS120(B+)  CHN17CS043   PH100(B), CY100(B), BE110(A), EC100(B), CY110(O), EC110(A+), MA102(B), BE102(A+),              CS100(F), CS120(B)  CHN17CS044   CY100(B+), BE110(O), EC100(B+), CY110(A+), EC110(A+), MA102(O), BE102(A), CS100(O),              CS120(O)  CHN17CS045   PH100(C), CY100(B), BE110(F), EC100(F), CY110(A+), EC110(A), MA102(F), BE102(A+),              CS100(F), CS120(A)  CHN17CS046   PH100(F), CY100(C), BE110(B+), EC100(B), CY110(A), EC110(A+), MA102(F), BE102(A),              CS100(F), CS120(B+)  CHN17CS047   PH100(B), CY100(B), BE100(F), BE110(B+), EC100(B+), CY110(A), EC110(A), MA102(B),              BE102(B+), CS100(F), CS120(B+)  CHN17CS048   CY100(B+), BE110(O), EC100(A), CY110(A+), EC110(O), MA102(B+), BE102(A+), CS100(B+),              CS120(O) 
+                                                                                                                                                                         CHN17CS049   CY100(O), BE110(A+), EC100(A+), CY110(O), EC110(O), MA102(A+), BE102(O), CS100(B+),              CS120(O)  CHN17CS050   CY100(B), BE110(A), EC100(B+), CY110(O), EC110(A+), MA102(O), BE102(A), CS100(B),              CS120(A)  CHN17CS051   CY100(C), BE110(A+), EC100(B+), CY110(A+), EC110(A), MA102(B+), BE102(A), CS100(B),              CS120(O)  CHN17CS052   PH100(C), CY100(C), BE100(F), BE110(B), EC100(C), CY110(A+), EC110(A), MA102(C),              BE102(B+), CS100(B), CS120(O)  CHN17CS053   CY100(A+), BE110(A+), EC100(B+), CY110(O), EC110(O), MA102(O), BE102(A+), CS100(B),              CS120(O)  CHN17CS054   CY100(B), BE100(B+), BE110(A+), EC100(B+), CY110(A+), EC110(O), MA102(B+), BE102(B+),              CS100(B), CS120(O)  CHN17CS055   CY100(C), BE110(B+), EC100(C), CY110(A), EC110(A), MA102(C), BE102(B+), CS100(B),              CS120(O)  CHN17CS056   CY100(B), BE100(C), BE110(B+), EC100(B), CY110(A), EC110(A+), MA102(F), BE102(B+),              CS100(C), CS120(B+)  CHN17CS057   CY100(O), BE110(O), EC100(O), CY110(O), EC110(O), MA102(A), BE102(A+), CS100(O),              CS120(O)  CHN17CS058   CY100(O), BE110(O), EC100(A+), CY110(O), EC110(O), MA102(A+), BE102(A+), CS100(B+),              CS120(O)  CHN17CS059   CY100(B+), BE110(F), EC100(B+), CY110(A+), EC110(A+), MA102(B+), BE102(A+), CS100(B),              CS120(A)  CHN17CS060   CY100(B+), BE100(B+), BE110(A+), EC100(B+), CY110(A+), EC110(O), MA102(B), BE102(A),              CS100(B), CS120(O)  CHN17CS061   CY100(B+), BE110(B+), EC100(A), CY110(O), EC110(O), MA102(B+), BE102(A+), CS100(B+),              CS120(A)  CHN17CS062   CY100(A+), BE110(A), EC100(A), CY110(A+), EC110(A+), MA102(B+), BE102(B+), CS100(B+),              CS120(O)  CHN17CS063   CY100(B+), BE110(B+), EC100(A), CY110(O), EC110(O), MA102(B+), BE102(A), CS100(B),              CS120(O)  CHN17CS064   CY100(B+), BE110(B+), EC100(B+), CY110(O), EC110(A), MA102(A), BE102(B+), CS100(B),              CS120(O)  CHN17CS065   PH100(F), CY100(C), BE100(F), BE110(F), EE100(C), EC100(F), CY110(A+), EC110(O),              MA102(P), BE102(A), CS100(F), CS120(A)  CHN17CS066   CY100(C), BE110(B+), EC100(B), CY110(A+), EC110(O), MA102(F), BE102(B+), CS100(F),              CS120(B) 
+                                                                                                                                                         CHN17CS067   CY100(B), BE110(B), EC100(B+), CY110(A+), EC110(A+), MA102(B), BE102(A), CS100(B),              CS120(B)  CHN17CS068   CY100(B), BE110(B), EC100(A+), CY110(A+), EC110(O), MA102(B+), BE102(B+), CS100(C),              CS120(B)  CHN17CS069   CY100(B+), BE110(A+), EC100(O), CY110(O), EC110(O), MA102(B+), BE102(A+), CS100(B),              CS120(B+)  CHN17CS070   CY100(B+), BE110(A), EC100(O), CY110(O), EC110(A+), MA102(A), BE102(A), CS100(B),              CS120(O)  CHN17CS071   PH100(F), CY100(C), BE100(F), BE110(B), EC100(B), CY110(O), EC110(A), MA102(F),              BE102(B+), CS100(F), CS120(A+)  CHN17CS072   CY100(B), BE100(C), BE110(B), EC100(B+), CY110(A+), EC110(A+), MA102(C), BE102(B),              CS100(C), CS120(B+)  CHN17CS073   PH100(F), CY100(F), BE100(F), BE110(FE), EE100(F), EC100(F), CY110(I), EC110(I), MA102(F),              BE102(B+), CS100(P), CS120(I)  CHN17CS074   CY100(F), BE110(F), EC100(F), CY110(A+), EC110(A), MA102(F), BE102(B+), CS100(P),              CS120(O)  CHN17CS075   CY100(B), BE110(B+), EC100(B), CY110(O), EC110(O), MA102(A), BE102(B+), CS100(C),              CS120(B)  CHN17CS076   CY100(P), BE110(C), EC100(C), CY110(A+), EC110(A+), MA102(B), BE102(B+), CS100(F),              CS120(O)  CHN17CS077   CY100(B+), BE110(O), EC100(O), CY110(O), EC110(O), MA102(B+), BE102(A+), CS100(B+),              CS120(O)  CHN17CS078   PH100(F), CY100(F), BE110(Absent), EE100(F), EC100(C), CY110(B+), EC110(O), MA102(F),              BE102(B), CS100(C), CS120(A)  CHN17CS079   CY100(B+), BE110(O), EC100(A), CY110(O), EC110(O), MA102(B+), BE102(A), CS100(B+),              CS120(A+)  CHN17CS080   CY100(B), BE110(A+), EC100(B), CY110(O), EC110(A), MA102(B), BE102(A), CS100(B),              CS120(O)  CHN17CS081   CY100(B), BE110(B+), EE100(C), EC100(B), CY110(B), EC110(O), MA102(B), BE102(B+),              CS100(B+), CS120(O)  CHN17CS082   PH100(F), CY100(C), BE100(F), BE110(F), EC100(B), CY110(A+), EC110(O), MA102(F),              BE102(B+), CS100(C), CS120(A)  CHN17CS083   CY100(B), BE110(F), EC100(C), CY110(O), EC110(A+), MA102(A), BE102(B+), CS100(F),              CS120(O)  CHN17CS084   CY100(B), BE110(A), EC100(B+), CY110(A), EC110(O), MA102(C), BE102(A), CS100(B),              CS120(O) 
+                                                                                                                                                         CHN17CS085   CY100(B+), BE110(O), EC100(B+), CY110(O), EC110(O), MA102(B+), BE102(B+), CS100(F),              CS120(O)  CHN17CS086   PH100(F), CY100(C), BE100(C), BE110(A+), EC100(C), CY110(O), EC110(O), MA102(F),              BE102(A), CS100(B), CS120(B+)  CHN17CS087   CY100(B+), BE110(A), EC100(B), CY110(O), EC110(O), MA102(F), BE102(A), CS100(B),              CS120(A)  CHN17CS088   PH100(C), CY100(F), BE100(F), BE110(B+), EC100(B), CY110(A+), EC110(O), MA102(C),              BE102(B+), CS100(C), CS120(O)  CHN17CS089   CY100(B), BE110(A+), EE100(C), EC100(C), CY110(A+), EC110(A+), MA102(B+), BE102(B),              CS100(B+), CS120(O)  CHN17CS090   CY100(C), BE100(C), BE110(F), EC100(F), CY110(A), EC110(A+), MA102(F), BE102(B),              CS100(B+), CS120(O)  CHN17CS091   CY100(A), BE110(A), EC100(B+), CY110(O), EC110(A+), MA102(B+), BE102(A), CS100(B),              CS120(A)  CHN17CS092   CY100(B+), BE100(C), BE110(F), EC100(B+), CY110(A+), EC110(A+), MA102(B), BE102(B+),              CS100(C), CS120(B)  CHN17CS093   CY100(B+), BE110(A+), EC100(B), CY110(O), EC110(A+), MA102(A), BE102(A), CS100(B+),              CS120(O)  CHN17CS094   CY100(A+), BE110(O), EC100(A), CY110(O), EC110(O), MA102(A+), BE102(B+), CS100(O),              CS120(O)  CHN17CS095   CY100(O), BE110(O), EC100(A), CY110(O), EC110(O), MA102(B), BE102(O), CS100(B),              CS120(O)  CHN17CS096   CY100(F), BE110(A), EE100(F), EC100(B+), CY110(A+), EC110(O), MA102(C), BE102(B+),              CS100(B+), CS120(O)  CHN17CS097   CY100(A+), BE110(O), EC100(B+), CY110(O), EC110(O), MA102(B+), BE102(B+), CS100(A+),              CS120(O)  CHN17CS098   CY100(O), BE110(O), EC100(A+), CY110(O), EC110(O), MA102(O), BE102(A), CS100(B),              CS120(B+)  CHN17CS099   CY100(B+), BE110(A+), EE100(C), EC100(A+), CY110(A), EC110(A+), MA102(A), BE102(B+),              CS100(B), CS120(A)  CHN17CS100   CY100(B), BE110(B+), EC100(B+), CY110(O), EC110(O), MA102(C), BE102(A), CS100(F),              CS120(O)  CHN17CS101   CY100(B), BE110(B+), EC100(C), CY110(O), EC110(A+), MA102(C), BE102(B+), CS100(B),              CS120(A+)  CHN17CS102   CY100(B+), BE110(B+), EC100(B), CY110(A+), EC110(A+), MA102(C), BE102(B+), CS100(F),              CS120(B+) 
+                                                                                                                                             CHN17CS103   CY100(FE), BE110(FE), EC100(FE), CY110(I), EC110(FE), MA102(FE), BE102(FE), CS100(FE),              CS120(FE)  CHN17CS104   CY100(B+), BE110(B+), EC100(B), CY110(A+), EC110(A+), MA102(C), BE102(A), CS100(B+),              CS120(O)  CHN17CS105   CY100(C), BE110(F), EC100(B+), CY110(A), EC110(A+), MA102(A), BE102(A), CS100(C),              CS120(B+)  CHN17CS106   CY100(B), BE100(C), BE110(F), EC100(C), CY110(A+), EC110(O), MA102(C), BE102(A),              CS100(F), CS120(O)  CHN17CS107   PH100(F), CY100(P), BE100(Absent), BE110(F), EC100(C), CY110(A), EC110(A+), MA102(F),              BE102(B+), CS100(F), CS120(B)  CHN17CS108   CY100(C), BE110(B+), EC100(B+), CY110(O), EC110(O), MA102(B+), BE102(B), CS100(P),              CS120(B)  CHN17CS109   PH100(F), CY100(F), BE100(F), BE110(F), EE100(F), EC100(F), CY110(A+), EC110(A),              MA102(F), BE102(B), CS100(F), CS120(A)  CHN17CS110   CY100(B+), BE110(B+), EC100(B+), CY110(O), EC110(A+), MA102(C), BE102(A), CS100(P),              CS120(O)  CHN17CS111   CY100(O), BE110(A+), EC100(A+), CY110(O), EC110(O), MA102(B+), BE102(B+), CS100(B+),              CS120(O)  CHN17CS112   CY100(A), BE110(A), EC100(O), CY110(A+), EC110(O), MA102(O), BE102(A), CS100(F),              CS120(B)  CHN17CS113   CY100(B), BE110(B+), EC100(C), CY110(A+), EC110(O), MA102(B), BE102(A), CS100(C),              CS120(O)  CHN17CS114   CY100(B+), BE110(A), EC100(A), CY110(A+), EC110(A+), MA102(B), BE102(A), CS100(B),              CS120(O)  CHN17CS115   CY100(B+), BE110(A+), EC100(F), CY110(A+), EC110(O), MA102(A+), BE102(A), CS100(B+),              CS120(O)  CHN17CS116   CY100(A+), BE110(B+), EC100(B+), CY110(A+), EC110(A), MA102(B+), BE102(B+), CS100(B),              CS120(O)  CHN17CS117   CY100(B+), BE110(B+), EC100(A+), CY110(O), EC110(O), MA102(A+), BE102(A+), CS100(B+),              CS120(O)  CHN17CS118   CY100(O), BE110(A+), EC100(O), CY110(O), EC110(O), MA102(O), BE102(A+), CS100(B),              CS120(O)  CHN17CS119   CY100(C), BE100(B), BE110(B+), EC100(F), CY110(A), EC110(O), MA102(B+), BE102(B+),              CS100(B), CS120(O)  CHN17CS120   CY100(C), BE100(F), BE110(F), EC100(B), CY110(A+), EC110(A+), MA102(F), BE102(B+),              CS100(F), CS120(B) 
+                                                                                                                                                ELECTRICAL AND ELECTRONICS ENGINEERING[Full Time]                  Course Code                                               Course shylesh@shylesh:~/Desktop/s2$ 's/\ CHN/\nCHN/g' result_no_newline.txt > result_one_per_line.txt
+bash: s/\ CHN/\nCHN/g: No such file or directory
+shylesh@shylesh:~/Desktop/s2$ sed 's/\ CHN/\nCHN/g' result_no_newline.txt > result_one_per_line.txt
+shylesh@shylesh:~/Desktop/s2$ cd ..
+shylesh@shylesh:~/Desktop$ printf  "SGPA OF S1\n\n" > s1/s1_result.txt
+shylesh@shylesh:~/Desktop$ join StudentDetails/S4D_reg_details.txt s1/result_one_per_line.txt | ./compute_gpa/compute_gpa >> s1/s1_result.txt
+bash: ./compute_gpa/compute_gpa: No such file or directory
+shylesh@shylesh:~/Desktop$ join StudentDetails/S4D_reg_details.txt s1/result_one_per_line.txt | ./compute_gpa/compute_gpa >> s1/s1_result.txt
+bash: ./compute_gpa/compute_gpa: No such file or directory
+shylesh@shylesh:~/Desktop$ join StudentDetails/S4D_reg_details.txt s1/result_one_per_line.txt | ./compute_gpa/compute_gpa >> s1/s1_result.txt
+shylesh@shylesh:~/Desktop$ printf  "SGPA OF S2\n\n" > s2/s2.result.txt
+shylesh@shylesh:~/Desktop$ join StudentDetails/S4D_reg_details.txt s2/result_one_per_line.txt | ./compute_gpa/compute_gpa >> s2/s2_result.txt
+shylesh@shylesh:~/Desktop$ mkdir "FOLDER"
+shylesh@shylesh:~/Desktop$ cd FOLDER
+shylesh@shylesh:~/Desktop/FOLDER$ join ../s1/result_one_per_line.txt ../s2/result_one_per_line.txt > s1_s2_with_reg.txt
+shylesh@shylesh:~/Desktop/FOLDER$ join ../StudentDetails/S4D_reg_details.txt s1_s2_with_reg.txt | ../compute_gpa/compute_gpa >cgpa.txt
+

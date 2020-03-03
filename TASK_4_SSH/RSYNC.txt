@@ -1,0 +1,37 @@
+shylesh@shylesh:~$ rsync -a ./Desktop/Django cs17d47@14.139.189.217:~/
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d47@14.139.189.217's password: 
+
+^Crsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(644) [sender=3.1.2]
+rsync: [sender] write error: Broken pipe (32)
+shylesh@shylesh:~$ rsync -a ./Desktop/Django/blog/manage.py cs17d47@14.139.189.217:~/
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d47@14.139.189.217's password: 
+shylesh@shylesh:~$ ssh cs17d47@14.139.189.217
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d47@14.139.189.217's password: 
+Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
+
+ * Website:  http://elementary.io/
+
+278 packages can be updated.
+0 updates are security updates.
+
+Last login: Thu Mar 28 11:28:24 2019 from 49.15.134.28
+$ ls
+CS232  dir1  dir2  Django  examples.desktop  manage.py	TASKS
+$ exit
+Connection to 14.139.189.217 closed.
+

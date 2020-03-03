@@ -1,0 +1,77 @@
+Script started on 2019-03-28 10:23:20+05:30
+]0;shylesh@shylesh: ~/Desktop[01;32mshylesh@shylesh[00m:[01;34m~/Desktop[00m$ sudo ifconfig
+[sudo] password for shylesh: 
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::6415:bf4d:8783:d2bb  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:9b:86:ec  txqueuelen 1000  (Ethernet)
+        RX packets 1358  bytes 762868 (762.8 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1275  bytes 151755 (151.7 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 544  bytes 49096 (49.0 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 544  bytes 49096 (49.0 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lxcbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 10.0.3.1  netmask 255.255.255.0  broadcast 0.0.0.0
+        ether 00:16:3e:00:00:00  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:8d:5d:9b  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+]0;shylesh@shylesh: ~/Desktop[01;32mshylesh@shylesh[00m:[01;34m~/Desktop[00m$ sudo ifconfig enp0s3 192.168.122.1 nw[Kert[K[Ktmask 255.22[K55.25 5.0 up
+]0;shylesh@shylesh: ~/Desktop[01;32mshylesh@shylesh[00m:[01;34m~/Desktop[00m$ sudo ifconfig[K[K[K[K[K[K[K[Kroute add default gw [K[Kw 192.168.0.253 enp0s3
+SIOCADDRT: Network is unreachable
+]0;shylesh@shylesh: ~/Desktop[01;32mshylesh@shylesh[00m:[01;34m~/Desktop[00m$ sudo route add default gw 192.168.0.253 enp0s3[1P enp0s3[1P enp0s3[1P enp0s3[1P enp0s3[1P enp0s31 enp0s32 enp0s32 enp0s3. enp0s31 enp0s3[C enp0s3
+]0;shylesh@shylesh: ~/Desktop[01;32mshylesh@shylesh[00m:[01;34m~/Desktop[00m$ route -n
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.122.1   0.0.0.0         UG    0      0        0 enp0s3
+10.0.3.0        0.0.0.0         255.255.255.0   U     0      0        0 lxcbr0
+192.168.122.0   0.0.0.0         255.255.255.0   U     0      0        0 virbr0
+]0;shylesh@shylesh: ~/Desktop[01;32mshylesh@shylesh[00m:[01;34m~/Desktop[00m$ ping 192.168.122.1
+PING 192.168.122.1 (192.168.122.1) 56(84) bytes of data.
+64 bytes from 192.168.122.1: icmp_seq=1 ttl=64 time=0.076 ms
+64 bytes from 192.168.122.1: icmp_seq=2 ttl=64 time=0.082 ms
+64 bytes from 192.168.122.1: icmp_seq=3 ttl=64 time=0.123 ms
+64 bytes from 192.168.122.1: icmp_seq=4 ttl=64 time=0.093 ms
+64 bytes from 192.168.122.1: icmp_seq=5 ttl=64 time=0.095 ms
+64 bytes from 192.168.122.1: icmp_seq=6 ttl=64 time=0.090 ms
+64 bytes from 192.168.122.1: icmp_seq=7 ttl=64 time=0.089 ms
+64 bytes from 192.168.122.1: icmp_seq=8 ttl=64 time=0.093 ms
+64 bytes from 192.168.122.1: icmp_seq=9 ttl=64 time=0.089 ms
+64 bytes from 192.168.122.1: icmp_seq=10 ttl=64 time=0.091 ms
+64 bytes from 192.168.122.1: icmp_seq=11 ttl=64 time=0.091 ms
+64 bytes from 192.168.122.1: icmp_seq=12 ttl=64 time=0.088 ms
+64 bytes from 192.168.122.1: icmp_seq=13 ttl=64 time=0.086 ms
+64 bytes from 192.168.122.1: icmp_seq=14 ttl=64 time=0.086 ms
+64 bytes from 192.168.122.1: icmp_seq=15 ttl=64 time=0.086 ms
+64 bytes from 192.168.122.1: icmp_seq=16 ttl=64 time=0.082 ms
+64 bytes from 192.168.122.1: icmp_seq=17 ttl=64 time=0.079 ms
+64 bytes from 192.168.122.1: icmp_seq=18 ttl=64 time=0.088 ms
+64 bytes from 192.168.122.1: icmp_seq=19 ttl=64 time=0.070 ms
+64 bytes from 192.168.122.1: icmp_seq=20 ttl=64 time=0.089 ms
+^C
+--- 192.168.122.1 ping statistics ---
+20 packets transmitted, 20 received, 0% packet loss, time 333ms
+rtt min/avg/max/mdev = 0.070/0.088/0.123/0.012 ms
+]0;shylesh@shylesh: ~/Desktop[01;32mshylesh@shylesh[00m:[01;34m~/Desktop[00m$ exit
+exit
+
+Script done on 2019-03-28 10:26:12+05:30

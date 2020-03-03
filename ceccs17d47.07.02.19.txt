@@ -1,0 +1,116 @@
+Script started on 2019-02-07 10:09:00+05:30
+]0;shylesh@shylesh: ~/Desktop[01;32mshylesh@shylesh[00m:[01;34m~/Desktop[00m$ cd Ds
+bash: cd: Ds: No such file or directory
+]0;shylesh@shylesh: ~/Desktop[01;32mshylesh@shylesh[00m:[01;34m~/Desktop[00m$ cd DS
+]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ ls
+08.txt                 BINARY_TREE_ARRAY.c  [0m[01;34mcs231-master[0m  [01;32mDQ[0m        Merge.c
+22.Infix_to_Postfix.c  [01;32mBTARR[0m                [01;31mcs231.zip[0m     git.docx
+24.Infix_Evaluation.c  [01;32mCQ[0m                   [01;32mDLL[0m           [01;32min[0m
+27.Dequeue_Array.c     CQarr.c              DLL.c         [01;32mME[0m
+]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ ls -l
+total 356
+-rw-r--r-- 1 shylesh shylesh    448 Nov 28 22:23 08.txt
+-rw-r--r-- 1 shylesh shylesh   2371 Nov 27 13:59 22.Infix_to_Postfix.c
+-rw-r--r-- 1 shylesh shylesh   2267 Nov 27 13:48 24.Infix_Evaluation.c
+-rw-r--r-- 1 shylesh shylesh   1917 Nov 27 14:08 27.Dequeue_Array.c
+-rw-r--r-- 1 shylesh shylesh   2857 Nov 28 22:06 BINARY_TREE_ARRAY.c
+-rwxr-xr-x 1 shylesh shylesh  16896 Nov 28 22:06 [0m[01;32mBTARR[0m
+-rwxr-xr-x 1 shylesh shylesh  16816 Nov 27 13:52 [01;32mCQ[0m
+-rw-r--r-- 1 shylesh shylesh   1334 Nov 27 13:51 CQarr.c
+drwxrwxr-x 2 shylesh shylesh   4096 Nov 29 00:49 [01;34mcs231-master[0m
+-rw-rw-r-- 1 shylesh shylesh 153766 Nov 28 23:46 [01;31mcs231.zip[0m
+-rwxr-xr-x 1 shylesh shylesh  17176 Nov 27 14:27 [01;32mDLL[0m
+-rw-r--r-- 1 shylesh shylesh   5100 Nov 27 14:27 DLL.c
+-rwxr-xr-x 1 shylesh shylesh  16936 Nov 27 14:08 [01;32mDQ[0m
+-rw-rw-r-- 1 shylesh shylesh  43770 Nov 29 00:59 git.docx
+-rwxr-xr-x 1 shylesh shylesh  16760 Nov 27 13:49 [01;32min[0m
+-rwxr-xr-x 1 shylesh shylesh  16776 Nov 27 14:14 [01;32mME[0m
+-rw-r--r-- 1 shylesh shylesh   1490 Nov 27 14:14 Merge.c
+]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ ls -lt
+total 356
+-rw-rw-r-- 1 shylesh shylesh  43770 Nov 29 00:59 git.docx
+drwxrwxr-x 2 shylesh shylesh   4096 Nov 29 00:49 [0m[01;34mcs231-master[0m
+-rw-rw-r-- 1 shylesh shylesh 153766 Nov 28 23:46 [01;31mcs231.zip[0m
+-rw-r--r-- 1 shylesh shylesh    448 Nov 28 22:23 08.txt
+-rwxr-xr-x 1 shylesh shylesh  16896 Nov 28 22:06 [01;32mBTARR[0m
+-rw-r--r-- 1 shylesh shylesh   2857 Nov 28 22:06 BINARY_TREE_ARRAY.c
+-rwxr-xr-x 1 shylesh shylesh  17176 Nov 27 14:27 [01;32mDLL[0m
+-rw-r--r-- 1 shylesh shylesh   5100 Nov 27 14:27 DLL.c
+-rwxr-xr-x 1 shylesh shylesh  16776 Nov 27 14:14 [01;32mME[0m
+-rw-r--r-- 1 shylesh shylesh   1490 Nov 27 14:14 Merge.c
+-rwxr-xr-x 1 shylesh shylesh  16936 Nov 27 14:08 [01;32mDQ[0m
+-rw-r--r-- 1 shylesh shylesh   1917 Nov 27 14:08 27.Dequeue_Array.c
+-rw-r--r-- 1 shylesh shylesh   2371 Nov 27 13:59 22.Infix_to_Postfix.c
+-rwxr-xr-x 1 shylesh shylesh  16816 Nov 27 13:52 [01;32mCQ[0m
+-rw-r--r-- 1 shylesh shylesh   1334 Nov 27 13:51 CQarr.c
+-rwxr-xr-x 1 shylesh shylesh  16760 Nov 27 13:49 [01;32min[0m
+-rw-r--r-- 1 shylesh shylesh   2267 Nov 27 13:48 24.Infix_Evaluation.c
+]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ ls -ltr
+total 356
+-rw-r--r-- 1 shylesh shylesh   2267 Nov 27 13:48 24.Infix_Evaluation.c
+-rwxr-xr-x 1 shylesh shylesh  16760 Nov 27 13:49 [0m[01;32min[0m
+-rw-r--r-- 1 shylesh shylesh   1334 Nov 27 13:51 CQarr.c
+-rwxr-xr-x 1 shylesh shylesh  16816 Nov 27 13:52 [01;32mCQ[0m
+-rw-r--r-- 1 shylesh shylesh   2371 Nov 27 13:59 22.Infix_to_Postfix.c
+-rw-r--r-- 1 shylesh shylesh   1917 Nov 27 14:08 27.Dequeue_Array.c
+-rwxr-xr-x 1 shylesh shylesh  16936 Nov 27 14:08 [01;32mDQ[0m
+-rw-r--r-- 1 shylesh shylesh   1490 Nov 27 14:14 Merge.c
+-rwxr-xr-x 1 shylesh shylesh  16776 Nov 27 14:14 [01;32mME[0m
+-rw-r--r-- 1 shylesh shylesh   5100 Nov 27 14:27 DLL.c
+-rwxr-xr-x 1 shylesh shylesh  17176 Nov 27 14:27 [01;32mDLL[0m
+-rw-r--r-- 1 shylesh shylesh   2857 Nov 28 22:06 BINARY_TREE_ARRAY.c
+-rwxr-xr-x 1 shylesh shylesh  16896 Nov 28 22:06 [01;32mBTARR[0m
+-rw-r--r-- 1 shylesh shylesh    448 Nov 28 22:23 08.txt
+-rw-rw-r-- 1 shylesh shylesh 153766 Nov 28 23:46 [01;31mcs231.zip[0m
+drwxrwxr-x 2 shylesh shylesh   4096 Nov 29 00:49 [01;34mcs231-master[0m
+-rw-rw-r-- 1 shylesh shylesh  43770 Nov 29 00:59 git.docx
+]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ [K]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ alias m="mkdir"
+]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ ls
+08.txt  22.Infix_to_Postfix.c  24.Infix_Evaluation.c  27.Dequeue_Array.c  BINARY_TREE_ARRAY.c  [0m[01;32mBTARR[0m  [01;32mCQ[0m  CQarr.c  [01;34mcs231-master[0m  [01;31mcs231.zip[0m  [01;32mDLL[0m  DLL.c  [01;32mDQ[0m  git.docx  [01;32min[0m  [01;32mME[0m  Merge.c
+]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ m New
+]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ ls
+08.txt  22.Infix_to_Postfix.c  24.Infix_Evaluation.c  27.Dequeue_Array.c  BINARY_TREE_ARRAY.c  [0m[01;32mBTARR[0m  [01;32mCQ[0m  CQarr.c  [01;34mcs231-master[0m  [01;31mcs231.zip[0m  [01;32mDLL[0m  DLL.c  [01;32mDQ[0m  git.docx  [01;32min[0m  [01;32mME[0m  Merge.c  [01;34mNew[0m
+]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ ls -ltr
+total 360
+-rw-r--r-- 1 shylesh shylesh   2267 Nov 27 13:48 24.Infix_Evaluation.c
+-rwxr-xr-x 1 shylesh shylesh  16760 Nov 27 13:49 [0m[01;32min[0m
+-rw-r--r-- 1 shylesh shylesh   1334 Nov 27 13:51 CQarr.c
+-rwxr-xr-x 1 shylesh shylesh  16816 Nov 27 13:52 [01;32mCQ[0m
+-rw-r--r-- 1 shylesh shylesh   2371 Nov 27 13:59 22.Infix_to_Postfix.c
+-rw-r--r-- 1 shylesh shylesh   1917 Nov 27 14:08 27.Dequeue_Array.c
+-rwxr-xr-x 1 shylesh shylesh  16936 Nov 27 14:08 [01;32mDQ[0m
+-rw-r--r-- 1 shylesh shylesh   1490 Nov 27 14:14 Merge.c
+-rwxr-xr-x 1 shylesh shylesh  16776 Nov 27 14:14 [01;32mME[0m
+-rw-r--r-- 1 shylesh shylesh   5100 Nov 27 14:27 DLL.c
+-rwxr-xr-x 1 shylesh shylesh  17176 Nov 27 14:27 [01;32mDLL[0m
+-rw-r--r-- 1 shylesh shylesh   2857 Nov 28 22:06 BINARY_TREE_ARRAY.c
+-rwxr-xr-x 1 shylesh shylesh  16896 Nov 28 22:06 [01;32mBTARR[0m
+-rw-r--r-- 1 shylesh shylesh    448 Nov 28 22:23 08.txt
+-rw-rw-r-- 1 shylesh shylesh 153766 Nov 28 23:46 [01;31mcs231.zip[0m
+drwxrwxr-x 2 shylesh shylesh   4096 Nov 29 00:49 [01;34mcs231-master[0m
+-rw-rw-r-- 1 shylesh shylesh  43770 Nov 29 00:59 git.docx
+drwxr-xr-x 2 shylesh shylesh   4096 Feb  7 10:14 [01;34mNew[0m
+]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ unalias m
+]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ m New2
+m: command not found
+]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ alias m="mkdr[Kir"
+]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ `[K~/.bash_aliases
+bash: /home/shylesh/.bash_aliases: No such file or directory
+]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ cat > new_Fi[K[K[K_file.txt
+^C
+]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ cat>new_file.txt
+^C
+]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ cat>new_file.txt[K[K[K[K[K[K[K[K[K[Kw
+^C
+]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ cat >tex[Kst
+Hello Woel  rld
+]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ cat test
+Hello World
+]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ cat test>test.txt
+Hi ths is is a test file.
+d ]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ cat test.txt
+Hi this is a test file.
+]0;shylesh@shylesh: ~/Desktop/DS[01;32mshylesh@shylesh[00m:[01;34m~/Desktop/DS[00m$ exit
+exit
+
+Script done on 2019-02-07 10:31:40+05:30

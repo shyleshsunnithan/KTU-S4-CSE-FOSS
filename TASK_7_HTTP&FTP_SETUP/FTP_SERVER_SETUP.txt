@@ -1,0 +1,28 @@
+shylesh@shylesh:~$ sudo apt-get install vsftpd
+[sudo] password for shylesh: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+vsftpd is already the newest version (3.0.3-11).
+The following packages were automatically installed and are no longer required:
+  linux-headers-4.18.0-10 linux-headers-4.18.0-10-generic
+  linux-image-4.18.0-10-generic linux-modules-4.18.0-10-generic
+  linux-modules-extra-4.18.0-10-generic
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 261 not upgraded.
+shylesh@shylesh:~$ sudo /etc/vsftpd/
+sudo: /etc/vsftpd/: command not found
+shylesh@shylesh:~$ cd /etc/vsftp/
+bash: cd: /etc/vsftp/: No such file or directory
+shylesh@shylesh:~$ sudo gedit /etc/vsftpd.conf
+
+** (gedit:6626): WARNING **: 10:06:29.268: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:6626): WARNING **: 10:06:29.269: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:6626): WARNING **: 10:08:19.437: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:6626): WARNING **: 10:08:19.437: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+^C
+shylesh@shylesh:~$ 
+
